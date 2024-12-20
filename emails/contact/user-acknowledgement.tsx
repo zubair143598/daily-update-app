@@ -22,7 +22,7 @@ export const UserAcknowledgment = ({ name }: UserEmailProps) => (
           <Text style={text}>
             Best regards,
             <br />
-            [Your Company Name]
+            Lumunate
           </Text>
         </Section>
         <Hr style={hr} />
