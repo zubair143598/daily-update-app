@@ -56,7 +56,7 @@ export default function WhyChooseUs() {
                                     <h4 className="font-raleway font-normal text-[1rem] text-forest-500 mt-1">Workflows tailored to your business</h4>
                                 </div>
                                 <p className="text-white/85">
-                                    Whether you're a solopreneur or an enterprise, our solutions streamline your workflows, enabling teams to
+                                    Whether you&apos;re a solopreneur or an enterprise, our solutions streamline your workflows, enabling teams to
                                     collaborate seamlessly and achieve more in less time.
                                 </p>
                             </article>
@@ -70,7 +70,7 @@ export default function WhyChooseUs() {
                                     <h4 className="font-raleway font-normal text-[1rem] text-forest-500 mt-1">Your success is our priority</h4>
                                 </div>
                                 <p className="text-white/85">
-                                    At Lumunate, we don't just build solutions; we deliver measurable results. Our team works with you to understand
+                                    At Lumunate, we don&apos;t just build solutions; we deliver measurable results. Our team works with you to understand
                                     your objectives, ensuring every project aligns with your vision and drives success.
                                 </p>
                             </article>
@@ -124,7 +124,7 @@ export default function WhyChooseUs() {
                             style={{
                                 opacity: "var(--opacity, 0)",
                                 transition: "opacity 500ms",
-                                background: "radial-gradient(600px circle at var(--x, 0) var(--y, 0), rgba(34, 139, 34, 0.3), transparent 40%)",
+                                background: "radial-gradient(600px circle at var(--x, 0) var(--y, 0), rgba(0, 162, 112, 0.3), transparent 40%)",
                             }}
                         />
                     </div>
