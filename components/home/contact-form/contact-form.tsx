@@ -96,7 +96,7 @@ export default function ContactFormClient() {
                 {errors.email && <p className="text-red-500">{errors.email.message}</p>}
             </div>
 
-            <div className="mb-[31]">
+            <div className="mb-[31px]">
                 <label className="text-white mb-2">Message</label>
                 <textarea
                     placeholder="Message"
