@@ -2,13 +2,14 @@
 
 import useMasonry from "@/utils/useMasonry";
 import Image from "next/image";
+import flagsLinks from "./flags/Flags";
 
 const testimonials = [
   {
     clientImg: '/images/logos/map-mavens.png',
     name: "Henry",
     company: "CEO Map Mavens",
-    flag:"/images/flags/United-States.png",
+    flag: flagsLinks.usa,
     content:
       "Lumunate helped us turn our concept for a customizable maps platform into a reality. Their team designed an intuitive interface, made everything editable in the interface and ensured a flawless user experience.We’ve received rave reviews from our users and the app has seen tremendous growth since its launch.Will be back for future upgrades!",
       h:36,
@@ -19,7 +20,7 @@ const testimonials = [
     clientImg: '/images/logos/dify.png',
     name: "Luc Elsby",
     company: "Dify.AI",
-    flag:"/images/flags/United-Kingdom.png",
+    flag:flagsLinks.uk,
     content:
       "Working with the team at Lumunate, in software development, was an excellent experience. As always they went above and beyond, to deliver quality outputs for us, providing post-deployment support. Very proactive communication and a deep understanding, making the whole process smooth and enjoyable!",
       h:23,
@@ -29,7 +30,7 @@ const testimonials = [
     clientImg: '/images/logos/fast-clean.png',
     name: "Asma",
     company: "CEO Acemyexam",
-    flag:"/images/flags/United-Kingdom.png",
+    flag:flagsLinks.uk,
     content:
       "Lumunate helped us turn our concept for a customizable maps platform into a reality. Their team designed an intuitive interface, made everything editable in the interface and ensured a flawless user experience. We’ve received rave reviews from our users and the app has seen tremendous growth since it s launch. Will be back for future upgrades!",
       h:22,
@@ -39,7 +40,7 @@ const testimonials = [
     clientImg: '/images/logos/real-outlet.png',
     name: "Ivavisocka",
     company: "CEO The Real Outlet",
-    flag:"/images/flags/Latvia.png",
+    flag:flagsLinks.latvia,
     content:
       "“The team at Lumunate is simply the best. They do the best jobs as always and have brought our idea for Koinfolio to life. Will continue the work with them for sure!",
       h:36,
@@ -49,7 +50,7 @@ const testimonials = [
     clientImg: '/images/logos/zeal.png',
     name: "Nir",
     company: "",
-    flag:"/images/flags/Peru.webp",
+    flag:flagsLinks.peru,
     content:
       "The team at Lumunate is simply the best. They do the best jobs as always and have brought our idea for Koinfolio to life. Will continue the work with them for sure!",
       w:16,
@@ -59,7 +60,7 @@ const testimonials = [
     clientImg: '/images/logos/active-campaign.png',
     name: "Ofirsilbiger",
     company: "",
-    flag:"/images/flags/Sweden.png",
+    flag:flagsLinks.sweden,
     content:
       "“Quite proactive with communication, great attention to detail and very prompt with delivering the final project. 5 stars, would certainly recommend",
       w:102,
@@ -69,7 +70,7 @@ const testimonials = [
     clientImg: '/images/logos/audiodrome.png',
     name: "Dave Newell",
     company: "",
-    flag:"/images/flags/United-States.png",
+    flag:flagsLinks.usa,
     content:
       "They were great! Took time to understand what I needed, quickly worked to deliver the project for me and then worked with me to make a few revisions to get it exactly how I wanted it. I will definitely work with them again and recommend them to anyone looking for reliable and excellent work",
       w:114,
@@ -79,7 +80,7 @@ const testimonials = [
     clientImg: '/images/logos/legacy-distrubuting.png',
     name: "Katelyn",
     company: "Legacy Distributing",
-    flag:"/images/flags/United-States.png",
+    flag:flagsLinks.usa,
     content:
       "Fantastic job! Was very easy to get this project done and I will definitely use them for future needs, time and time again. Wonderful experience.",
       w:35,
@@ -89,7 +90,7 @@ const testimonials = [
     clientImg: '/images/logos/koinfolio.png',
     name: "Ebrahim",
     company: "CEO Koinfolio",
-    flag:"/images/flags/germany.png",
+    flag:flagsLinks.germany,
     content:
       "The team at Lumunate is simply the best. They do the best jobs as always and have brought our idea for Koinfolio to life. Will continue the work with them for sure!",
       w:89.08,
@@ -99,7 +100,7 @@ const testimonials = [
     clientImg: '/images/logos/ace-my-exam.png',
     name: "Asma",
     company: "CEO Acemyexam",
-    flag:"/images/flags/United-Kingdom.png",
+    flag:flagsLinks.uk,
     content:
       "Working with Lumunate was an absolute game-changer for us. We had been struggling with an incomplete app built on Django, and it felt like we’d hit a dead end. The team at Lumunate not only understood our challenges but also took the time to truly grasp our vision. They rebuilt our tutoring platform from the ground up using Next.js, and the difference has been night and day. We couldn’t recommend them more highly!",
       w:100,
@@ -109,7 +110,7 @@ const testimonials = [
     clientImg: '/images/logos/thomas.png',
     name: "Thomas",
     company: "The Marketing Captain",
-    flag:"/images/flags/Netherlands.png",
+    flag:flagsLinks.netherlands,
     content:
       "This was a very big project of mine and needed some helpen from them. They’ve done exactly what was needed to get the end result for my marketing agency. Happy with the expertise and knowledge and looking forward to work more with them in the future. Thanks!",
       w:39,
@@ -119,7 +120,7 @@ const testimonials = [
     clientImg: '/images/logos/ayse.png',
     name: "Cathy Charles",
     company: "CEO Ayse",
-    flag:"/images/flags/United-States.png",
+    flag:flagsLinks.usa,
     content:
       "I highly recommend working with Lumunate! The CEO and his team did a great job with helping me build my mobile application and they are clearly experts in their field. They were very easy to work with, polite, communicated efficiently, were transparent about their process, well-organized and had great time management skills. In fact, often times they completed tasks faster than we agreed upon. If you are looking for a high-quality development team, do not hesitate to use Lumunate’s services.",
       w:93,
@@ -192,7 +193,7 @@ export function Testimonial({
           <Image width={testimonial.w} src={testimonial.clientImg} height={testimonial.h} alt="Client logo" />
           </div>
           <div>
-          <Image width={40} src={testimonial.flag} height={20} alt="flag" />
+          <Image className="rounded-sm mr-1" width={40} src={testimonial.flag} height={20} alt="flag" />
           </div>
           
         </div>
