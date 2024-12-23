@@ -62,7 +62,7 @@ export default function ContactFormClient() {
                 </div>
             )}
 
-            <div className="mb-4">
+            <div className="mb-[31px]">
                 <label className="text-white mb-2">Name</label>
                 <input
                     type="text"
@@ -74,12 +74,12 @@ export default function ContactFormClient() {
                         borderImageSource: 'linear-gradient(95.8deg, rgba(0,28,19,0.5) 0%, #00A270 50%, rgba(0,28,19,0.3) 99.5%)',
                         borderImageSlice: 1
                     }}
-                    className="w-full p-3 bg-transparent text-white border-x-0 rounded-md"
+                    className="w-full h-[49px] mt-[15px] bg-transparent text-white border-x-0 rounded-md"
                 />
                 {errors.name && <p className="text-red-500">{errors.name.message}</p>}
             </div>
 
-            <div className="mb-4">
+            <div className="mb-[31px]">
                 <label className="text-white mb-2">Email</label>
                 <input
                     type="email"
@@ -91,12 +91,12 @@ export default function ContactFormClient() {
                         borderImageSource: 'linear-gradient(95.8deg, rgba(0,28,19,0.5) 0%, #00A270 50%, rgba(0,28,19,0.3) 99.5%)',
                         borderImageSlice: 1
                     }}
-                    className="w-full p-3 bg-transparent text-white border-x-0 rounded-md"
+                    className="w-full h-[49px] mt-[15px] bg-transparent text-white border-x-0 rounded-md"
                 />
                 {errors.email && <p className="text-red-500">{errors.email.message}</p>}
             </div>
 
-            <div className="mb-4">
+            <div className="mb-[31]">
                 <label className="text-white mb-2">Message</label>
                 <textarea
                     placeholder="Message"
@@ -107,7 +107,7 @@ export default function ContactFormClient() {
                         borderImageSource: 'linear-gradient(95.8deg, rgba(0,28,19,0.5) 0%, #00A270 50%, rgba(0,28,19,0.3) 99.5%)',
                         borderImageSlice: 1
                     }}
-                    className="w-full p-3 bg-transparent text-white border-x-0 rounded-md min-h-[200px]"
+                    className="w-full  mt-[15px] bg-transparent text-white border-x-0 rounded-md min-h-[142px]"
                 />
                 {errors.message && <p className="text-red-500">{errors.message.message}</p>}
             </div>

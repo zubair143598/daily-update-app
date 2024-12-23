@@ -93,7 +93,7 @@ export default function Features() {
 
               <div className="flex gap-5 flex-wrap">
                 <Image src={'/images/icons/mendix.svg'} width={80} height={30} alt="Icon" />
-                <Image src={'/images/icons/outsystems.svg'} width={80} height={30} alt="Icon" />
+                <Image src={'/images/icons/outsystems.svg'} width={100} height={30} alt="Icon" />
                 <Image src={'/images/icons/appian.svg'} width={80} height={30} alt="Icon" />
                 <Image src={'/images/icons/salesforce-original.svg'} width={70} height={30} alt="Icon" />
               </div>
@@ -108,10 +108,10 @@ export default function Features() {
               </p>
 
               <div className="flex gap-3 mt-4 flex-wrap">
-                <Image src={'/images/icons/amazonwebservices-original-wordmark.svg'} width={50} height={30} alt="Icon" />
+                <Image src={'/images/icons/amazonwebservices-original-wordmark.svg'} width={60} height={30} alt="Icon" />
                 <Image src={'/images/icons/linode.svg'} width={50} height={30} alt="Icon" />
                 <Image src={'/images/icons/azure-original.svg'} width={50} height={30} alt="Icon" />
-                <Image src={'/images/icons/googlecloud-original.svg'} width={50} height={30} alt="Icon" />
+                <Image src={'/images/icons/googlecloud-original.svg'} width={60} height={30} alt="Icon" />
               </div>
 
             </article>
@@ -132,12 +132,12 @@ export default function Features() {
               </p>
 
               <div className="flex gap-3 mt-4 flex-wrap">
-                <Image src={'/images/icons/joomla.svg'} width={50} height={30} alt="Icon" />
+                <Image src={'/images/icons/joomla.svg'} width={45} height={30} alt="Icon" />
                 <Image src={'/images/icons/hubspot.svg'} width={50} height={30} alt="Icon" />
-                <Image src={'/images/icons/wordpress-original.svg'} width={50} height={30} alt="Icon" />
-                <Image src={'/images/icons/woo-commerce.svg'} width={50} height={30} alt="Icon" />
+                <Image src={'/images/icons/wordpress-original.svg'} width={55} height={30} alt="Icon" />
+                <Image src={'/images/icons/woo-commerce.svg'} width={65} height={30} alt="Icon" />
                 <Image src={'/images/icons/webflow.svg'} width={50} height={30} alt="Icon" />
-                <Image src={'/images/icons/drupal.svg'} width={50} height={30} alt="Icon" />
+                <Image src={'/images/icons/drupal.svg'} width={40} height={30} alt="Icon" />
               </div>
 
             </article>
