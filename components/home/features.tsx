@@ -46,7 +46,7 @@ export default function Features() {
             <article>
               <Image className="mb-2" src={'/images/icons/webdev.svg'} width={29} height={24} alt="Web Development and Design" /> 
               <h3 className="mb-1 font-menda font-semibold text-[1rem] text-gray-200">Web Development and Design</h3>
-              <p className="text-forest-200/65">
+              <p className="text-white/85">
                 Delivering visually appealing, user-friendly and extensive web applications is at the core of what we do. From
                 custom web applications to landing pages, our services include UX/UI design, fullstack development, SEO
                 optimization and cross-browser compatibility
@@ -69,7 +69,7 @@ export default function Features() {
             <article>
             <Image className="mb-2" src={'/images/icons/mobile-programming.svg'} width={29} height={24} alt="Web Development and Design" /> 
               <h3 className="mb-1 font-menda text-[1rem] font-semibold text-gray-200">Mobile App Development</h3>
-              <p className="text-forest-200/65">
+              <p className="text-white/85">
                 We create scalable, intuitive and high-performance mobile applications for iOS, Android or cross-platform use.
                 Whether it&apos;s a customer-facing app or a business tool, we design, develop and deploy apps, that deliver
                 seamless user experiences
@@ -86,14 +86,14 @@ export default function Features() {
             <article>
             <Image className="mb-2" src={'/images/icons/data.svg'} width={29} height={24} alt="Web Development and Design" /> 
               <h3 className="mb-1 font-menda text-[1rem] font-semibold text-gray-200">Systems Integration</h3>
-              <p className="text-forest-200/65">
+              <p className="text-white/85">
                 Streamline your operations with custom API development and systems integration. We connect your existing tools,
                 applications and platforms, enabling seamless data flow, automation and improved operational efficiency.{" "}
               </p>
 
               <div className="flex gap-5 flex-wrap">
                 <Image src={'/images/icons/mendix.svg'} width={80} height={30} alt="Icon" />
-                <Image src={'/images/icons/outsystems.svg'} width={80} height={30} alt="Icon" />
+                <Image src={'/images/icons/outsystems.svg'} width={100} height={30} alt="Icon" />
                 <Image src={'/images/icons/appian.svg'} width={80} height={30} alt="Icon" />
                 <Image src={'/images/icons/salesforce-original.svg'} width={70} height={30} alt="Icon" />
               </div>
@@ -102,23 +102,23 @@ export default function Features() {
             <article>
             <Image className="mb-2" src={'/images/icons/Lock-Cloud.svg'} width={29} height={24} alt="Web Development and Design" /> 
               <h3 className="mb-1 font-menda text-[1rem] font-semibold text-gray-200">IT Consulting & Cloud Solutions</h3>
-              <p className="text-forest-200/65">
+              <p className="text-white/85">
                 We help businesses with cloud migration, infrastructure optimization and digital transformation strategies, while
                 ensuring scalability, security and performance.{" "}
               </p>
 
               <div className="flex gap-3 mt-4 flex-wrap">
-                <Image src={'/images/icons/amazonwebservices-original-wordmark.svg'} width={50} height={30} alt="Icon" />
+                <Image src={'/images/icons/amazonwebservices-original-wordmark.svg'} width={60} height={30} alt="Icon" />
                 <Image src={'/images/icons/linode.svg'} width={50} height={30} alt="Icon" />
                 <Image src={'/images/icons/azure-original.svg'} width={50} height={30} alt="Icon" />
-                <Image src={'/images/icons/googlecloud-original.svg'} width={50} height={30} alt="Icon" />
+                <Image src={'/images/icons/googlecloud-original.svg'} width={60} height={30} alt="Icon" />
               </div>
 
             </article>
             <article>
             <Image className="mb-2" src={'/images/icons/megaphone.svg'} width={29} height={24} alt="Web Development and Design" /> 
               <h3 className="mb-1 font-menda text-[1rem] font-semibold text-gray-200">Digital Marketing Services</h3>
-              <p className="text-forest-200/65">
+              <p className="text-white/85">
                 From SEO and content marketing to social media management and paid ad campaigns, we craft data-driven strategies
                 that maximize your ROI and drive measurable growth{" "}
               </p>
@@ -126,18 +126,18 @@ export default function Features() {
             <article>
             <Image className="mb-2" src={'/images/icons/note-favorite.svg'} width={29} height={24} alt="Web Development and Design" />  
               <h3 className="mb-1 font-menda text-[1rem] font-semibold text-gray-200">Custom CMS Development</h3>
-              <p className="text-forest-200/65">
+              <p className="text-white/85">
                 From WordPress and Shopify to Drupal and Joomla, we offer seamless integrations, tailored e-commerce solutions and
                 much more.
               </p>
 
               <div className="flex gap-3 mt-4 flex-wrap">
-                <Image src={'/images/icons/joomla.svg'} width={50} height={30} alt="Icon" />
+                <Image src={'/images/icons/joomla.svg'} width={45} height={30} alt="Icon" />
                 <Image src={'/images/icons/hubspot.svg'} width={50} height={30} alt="Icon" />
-                <Image src={'/images/icons/wordpress-original.svg'} width={50} height={30} alt="Icon" />
-                <Image src={'/images/icons/woo-commerce.svg'} width={50} height={30} alt="Icon" />
+                <Image src={'/images/icons/wordpress-original.svg'} width={55} height={30} alt="Icon" />
+                <Image src={'/images/icons/woo-commerce.svg'} width={65} height={30} alt="Icon" />
                 <Image src={'/images/icons/webflow.svg'} width={50} height={30} alt="Icon" />
-                <Image src={'/images/icons/drupal.svg'} width={50} height={30} alt="Icon" />
+                <Image src={'/images/icons/drupal.svg'} width={40} height={30} alt="Icon" />
               </div>
 
             </article>
