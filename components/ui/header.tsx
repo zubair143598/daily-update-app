@@ -14,11 +14,14 @@ export default function Header() {
           </div>
 
           <ul className="sm:flex items-center justify-end md:gap-10 gap-6 hidden">
+          <li>
+              <Link href="#" className="hover:text-forest-600 duration-200">Services</Link>
+            </li>
             <li>
               <Link href="#" className="hover:text-forest-600 duration-200">About</Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-forest-600 duration-200">Services</Link>
+              <Link href="#" className="hover:text-forest-600 duration-200">Features</Link>
             </li>
             <li>
               <Link href="#" className="hover:text-forest-600 duration-200">Testimonials</Link>
