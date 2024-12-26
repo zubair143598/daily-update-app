@@ -126,7 +126,7 @@ export default function WhyChooseUs() {
               >
                 <span className="relative inline-flex items-center">
                   Let&apos;s work together{" "}
-                  <span className="ml-1 tracking-normal text-white/50 transition-transform group-hover:translate-x-0.5">
+                  <span className="ml-1 tracking-normal text-white/50 transition-transform group-hover:translate-x-2">
                     -&gt;
                   </span>
                 </span>

@@ -29,7 +29,7 @@ export default function Cta() {
                 >
                   <span className="relative inline-flex items-center">
                     Schedule an Appointment {" "}
-                    <span className="ml-1 tracking-normal text-white/50 transition-transform group-hover:translate-x-0.5">
+                    <span className="ml-1 tracking-normal text-white/50 transition-transform group-hover:translate-x-2">
                       -&gt;
                     </span>
                   </span>
