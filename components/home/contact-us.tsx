@@ -9,18 +9,18 @@ export default function ContactForm() {
                     <span className="block">Let&apos;s</span>
                     <span className="block">Connect</span>
                 </h2>
-                <div className="flex flex-col mt-4 content-center">
+                <div className="flex flex-col mt-4 gap-y-2 content-center">
                     <div className="flex items-center">
-                        <Image src="/images/icons/mail-outline.svg" alt="Email" className="mr-4" width={16} height={16}/>
-                        <span>marketing@luminate.com</span>
+                        <Image src="/images/icons/mail-outline.svg" alt="Email" className="mr-4" width={24} height={24}/>
+                        <span className='text-[20px]'>marketing@luminate.com</span>
                     </div>
                     <div className="flex items-center">
-                        <Image src="/images/icons/phone-flip.svg" alt="Phone" className="mr-4" width={16} height={16}/>
-                        <span>+92 3361000001</span>
+                        <Image src="/images/icons/phone-flip.svg" alt="Phone" className="mr-4" width={24} height={24}/>
+                        <span className='text-[20px]'>+92 3361000001</span>
                     </div>
                     <div className="flex items-center">
-                        <Image src="/images/icons/location-pin.svg" alt="Location" className="mr-4" width={16} height={16}/>
-                        <span>Islamabad, Pakistan</span>
+                        <Image src="/images/icons/location-pin.svg" alt="Location" className="mr-4" width={24} height={24}/>
+                        <span className='text-[20px]'>Islamabad, Pakistan</span>
                     </div>
                 </div>
             </div>
