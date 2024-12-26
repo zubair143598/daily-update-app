@@ -37,7 +37,7 @@ export default function HeroHome() {
             </div>
             <div data-aos="fade-up" data-aos-delay={400} data-aos-offset="0" data-aos-anchor-placement="top-bottom">
               <Link
-                className="btn group mb-4 bg-gradient-to-t from-forest-600 to-forest-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_theme(colors.white/.16)] hover:bg-[length:100%_150%] sm:mb-0 w-auto rounded-full px-16 mt-8"
+                className="btn group mb-4 bg-gradient-to-t from-forest-600 hover:bg-forest-800 hover:from-transparent hover:to-transparent to-forest-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_theme(colors.white/.16)] hover:bg-[length:100%_150%] sm:mb-0 w-auto rounded-full px-16 mt-8"
                 href="https://calendly.com/saad-b-javaid22/consultation"
                 target="_blank"
               >
