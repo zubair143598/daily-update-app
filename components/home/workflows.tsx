@@ -3,7 +3,7 @@ import Spotlight from "@/components/animations/spotlight";
 
 export default function Workflows() {
   return (
-    <section>
+    <section id="features">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="py-12 md:py-20">
           {/* Section header */}

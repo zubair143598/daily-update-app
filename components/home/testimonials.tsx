@@ -133,7 +133,7 @@ export default function Testimonials() {
   const masonryContainer = useMasonry();
 
   return (
-    <div className="mx-auto max-w-[1440px] px-4 sm:px-6">
+    <div id="testimonials" className="mx-auto max-w-[1440px] px-4 sm:px-6">
       {/* Section header */}
       <div className="py-12 md:py-20">
         {/* Section header */}

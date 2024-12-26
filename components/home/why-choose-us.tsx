@@ -4,7 +4,7 @@ import BlurredShape from "@/public/images/blurred-shape.svg";
 
 export default function WhyChooseUs() {
   return (
-    <section className="relative">
+    <section id="about" className="relative">
       <div className="pointer-events-none absolute left-1/2 top-0 -z-10 -mt-20 -translate-x-1/2" aria-hidden="true">
         <Image className="max-w-none" src={BlurredShapeGray} width={760} height={668} alt="Blurred shape" />
       </div>
