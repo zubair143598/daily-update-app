@@ -19,6 +19,10 @@ export default function ContactForm() {
                         <span className='text-[20px]'>+92 3361000001</span>
                     </div>
                     <div className="flex items-center">
+                        <Image src="/images/icons/whatsapp.svg" alt="Phone" className="mr-4 filter " width={24} height={24}/>
+                        <span className='text-[20px]'>+92 3310200888</span>
+                    </div>
+                    <div className="flex items-center">
                         <Image src="/images/icons/location-pin.svg" alt="Location" className="mr-4" width={24} height={24}/>
                         <span className='text-[20px]'>Islamabad, Pakistan</span>
                     </div>
