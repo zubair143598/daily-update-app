@@ -63,51 +63,51 @@ export default function ContactFormClient() {
             )}
 
             <div className="mb-[31px]">
-                <label className="text-white mb-2">Name</label>
+                <label className="text-[#BABABA] mb-2">Name</label>
                 <input
                     type="text"
                     placeholder="Name"
                     {...register("name")}
                     style={{
-                        borderTopWidth: '2px',
-                        borderBottomWidth: '2px',
-                        borderImageSource: 'linear-gradient(95.8deg, rgba(0,28,19,0.5) 0%, #00A270 50%, rgba(0,28,19,0.3) 99.5%)',
+                        borderTopWidth: '1px',
+                        borderBottomWidth: '1px',
+                        borderImageSource: 'linear-gradient(95.8deg, rgba(0, 28, 19, 1) 0%, rgb(0, 162, 112) 50%, rgba(0, 28, 19, 0.3) 111.5%)',
                         borderImageSlice: 1
                     }}
-                    className="w-full h-[49px] mt-[15px] bg-transparent text-white border-x-0 rounded-md"
+                    className="w-full h-[49px] mt-[15px] focus:ring-[rgb(0,162,112)] bg-transparent text-white rounded-md"
                 />
                 {errors.name && <p className="text-red-500">{errors.name.message}</p>}
             </div>
 
             <div className="mb-[31px]">
-                <label className="text-white mb-2">Email</label>
+                <label className="text-[#BABABA] mb-2">Email</label>
                 <input
                     type="email"
                     placeholder="Email"
                     {...register("email")}
                     style={{
-                        borderTopWidth: '2px',
-                        borderBottomWidth: '2px',
-                        borderImageSource: 'linear-gradient(95.8deg, rgba(0,28,19,0.5) 0%, #00A270 50%, rgba(0,28,19,0.3) 99.5%)',
+                        borderTopWidth: '1px',
+                        borderBottomWidth: '1px',
+                        borderImageSource: 'linear-gradient(95.8deg, rgba(0, 28, 19, 1) 0%, rgb(0, 162, 112) 50%, rgba(0, 28, 19, 0.3) 111.5%)',
                         borderImageSlice: 1
                     }}
-                    className="w-full h-[49px] mt-[15px] bg-transparent text-white border-x-0 rounded-md"
+                    className="w-full h-[49px] mt-[15px] focus:ring-[rgb(0,162,112)] bg-transparent text-white border-x-[0.5px] rounded-lg"
                 />
                 {errors.email && <p className="text-red-500">{errors.email.message}</p>}
             </div>
 
             <div className="mb-[31px]">
-                <label className="text-white mb-2">Message</label>
+                <label className="text-[#BABABA] mb-2">Message</label>
                 <textarea
                     placeholder="Message"
                     {...register("message")}
                     style={{
-                        borderTopWidth: '2px',
-                        borderBottomWidth: '2px',
-                        borderImageSource: 'linear-gradient(95.8deg, rgba(0,28,19,0.5) 0%, #00A270 50%, rgba(0,28,19,0.3) 99.5%)',
+                        borderTopWidth: '1px',
+                        borderBottomWidth: '1px',
+                        borderImageSource: 'linear-gradient(95.8deg, rgba(0, 28, 19, 1) 0%, rgb(0, 162, 112) 50%, rgba(0, 28, 19, 0.3) 111.5%)',
                         borderImageSlice: 1
                     }}
-                    className="w-full  mt-[15px] bg-transparent text-white border-x-0 rounded-md min-h-[142px]"
+                    className="w-full focus:ring-[rgb(0,162,112)] mt-[15px] bg-transparent text-white border-x-[0.5px] rounded-md min-h-[142px]"
                 />
                 {errors.message && <p className="text-red-500">{errors.message.message}</p>}
             </div>
