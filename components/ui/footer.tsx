@@ -60,7 +60,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="relative w-full overflow-hidden h-56">
+      <div className="relative flex justify-center w-full overflow-hidden h-56">
         <Image
           src={'/footer-image.jpeg'}
           width={2000}
