@@ -26,7 +26,7 @@ export default function HeroHome() {
               </p>
             </div>
 
-            <div className="max-w-[1440px] w-full" data-aos="fade-up">
+            <div className="max-w-[1440px] -ml-3 w-full" data-aos="fade-up">
               <Image
                 src={'/images/Illustration.png'}
                 width={1623}
