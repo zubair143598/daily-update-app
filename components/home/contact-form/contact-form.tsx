@@ -64,7 +64,6 @@ export default function ContactFormClient() {
           {submitStatus.message}
         </div>
       )}
-
       <div className="mb-[31px]">
         <label className="text-[#BABABA] mb-2">Name</label>
         <input

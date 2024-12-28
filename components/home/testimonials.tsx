@@ -14,6 +14,7 @@ const testimonials = [
       "Lumunate helped us turn our concept for a customizable maps platform into a reality. Their team designed an intuitive interface, made everything editable in the interface and ensured a flawless user experience.We’ve received rave reviews from our users and the app has seen tremendous growth since its launch.Will be back for future upgrades!",
       h:36,
       w:38,
+
       invertProp:"",
   },
   {
@@ -23,6 +24,7 @@ const testimonials = [
     flag:flagsLinks.uk,
     content:
       "Working with the team at Lumunate, in software development, was an excellent experience. As always they went above and beyond, to deliver quality outputs for us, providing post-deployment support. Very proactive communication and a deep understanding, making the whole process smooth and enjoyable!",
+
       w:60,
       h:38,
       invertProp:"",
@@ -37,7 +39,6 @@ const testimonials = [
       w:70,
       h:38,
       invertProp:"",
-
   },
   {
     clientImg: '/images/logos/real-outlet.png',
@@ -79,6 +80,7 @@ const testimonials = [
     flag:flagsLinks.usa,
     content:
       "They were great! Took time to understand what I needed, quickly worked to deliver the project for me and then worked with me to make a few revisions to get it exactly how I wanted it. I will definitely work with them again and recommend them to anyone looking for reliable and excellent work",
+
       w:122,
       h:36,
       invertProp:"",
@@ -193,7 +195,6 @@ export function Testimonial({
     w:number;
     h:number;
     invertProp:string;
-
   };
   children: React.ReactNode;
 }) {

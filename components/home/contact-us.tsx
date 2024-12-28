@@ -72,6 +72,7 @@ export default function ContactForm() {
             />
             <span className="text-[20px]">Islamabad, Pakistan</span>
           </div>
+
         </div>
       </div>
       <div className="md:w-1/2 mx-auto px-4 sm:px-6">
