@@ -218,11 +218,11 @@ export function Testimonial({
           <div className="text-sm font-medium text-gray-200">
             <span>{testimonial.name}</span>
             { testimonial.company ? <span className="text-gray-700"> - </span>:""}
-    <a
+    <span
       className="text-forest-200/65 transition-colors hover:text-forest-500"
     >
       {testimonial.company}
-    </a>
+    </span>
           </div>
         </div>
       </div>
