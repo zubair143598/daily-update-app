@@ -1,5 +1,6 @@
 import Image from "next/image";
 import BlurredShape from "@/public/images/blurred-shape.svg";
+import Link from "next/link";
 
 export default function Cta() {
   return (
@@ -22,7 +23,7 @@ export default function Cta() {
             </p>
             <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center font-raleway">
               <div data-aos="fade-up" data-aos-delay={400}>
-                <a
+                <Link
                   className="btn group mb-4 w-auto bg-gradient-to-t from-forest-600 to-forest-500  hover:bg-forest-800 hover:from-transparent hover:to-transparent bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_theme(colors.white/.16)] hover:bg-[length:100%_150%] sm:mb-0 rounded-full px-16"
                   href="https://calendly.com/saad-b-javaid22/consultation"
                   target="_blank"
@@ -33,7 +34,7 @@ export default function Cta() {
                       -&gt;
                     </span>
                   </span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
