@@ -14,17 +14,20 @@ export default function Header() {
           </div>
 
           <ul className="sm:flex items-center justify-end md:gap-10 gap-6 hidden">
-            <li>
-              <Link href="#" className="hover:text-forest-600 duration-200">About</Link>
+          <li>
+              <Link href="#services" className="hover:text-forest-400 duration-200">Services</Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-forest-600 duration-200">Services</Link>
+              <Link href="#about" className="hover:text-forest-400 duration-200">About</Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-forest-600 duration-200">Testimonials</Link>
+              <Link href="#features" className="hover:text-forest-400 duration-200">Features</Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-forest-600 duration-200">Contact</Link>
+              <Link href="#testimonials" className="hover:text-forest-400 duration-200">Testimonials</Link>
+            </li>
+            <li>
+              <Link href="#contact" className="hover:text-forest-400 duration-200">Contact</Link>
             </li>
           </ul>
 
@@ -32,8 +35,9 @@ export default function Header() {
           <ul className="flex flex-1 items-center justify-end gap-3">
             <li>
               <Link
-                href="#"
-                className="btn-sm bg-gradient-to-t from-forest-600 to-forest-500 bg-[length:100%_100%] bg-[bottom] py-[5px] text-white shadow-[inset_0px_1px_0px_0px_theme(colors.white/.16)] hover:bg-[length:100%_150%]"
+                href="https://calendly.com/saad-b-javaid22/consultation"
+                target="_blank"
+                className="btn-sm  bg-gradient-to-t from-forest-600 to-forest-500 bg-[length:100%_100%] bg-[bottom] py-[5px] text-white shadow-[inset_0px_1px_0px_0px_theme(colors.white/.16)]  hover:bg-forest-800 hover:from-transparent hover:to-transparent hover:bg-[length:100%_150%]"
               >
                 Let&apos;s Talk
               </Link>
