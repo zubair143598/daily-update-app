@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Spotlight from "@/components/animations/spotlight";
+import Link from "next/link";
 
 export default function Workflows() {
   return (
-    <section>
+    <section id="features">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="py-12 md:py-20">
           {/* Section header */}
@@ -20,7 +21,7 @@ export default function Workflows() {
           {/* Spotlight items */}
           <Spotlight className="group mx-auto grid items-start gap-6 lg:max-w-none lg:grid-cols-3 sm:grid-cols-2">
             {/* Card 1 */}
-            <a
+            <Link
               className="group/card relative h-full overflow-hidden rounded-2xl bg-[#000000] p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-forest-900/50 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-forest-800 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
               href="#0"
             >
@@ -57,8 +58,8 @@ export default function Workflows() {
                   </p>
                 </div>
               </div>
-            </a>
-            <a
+            </Link>
+            <Link
               className="group/card relative h-full overflow-hidden rounded-2xl bg-[#000000] p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-forest-900/50 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-forest-800 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
               href="#0"
             >
@@ -94,8 +95,8 @@ export default function Workflows() {
                   </p>
                 </div>
               </div>
-            </a>
-            <a
+            </Link>
+            <Link
               className="group/card relative h-full overflow-hidden rounded-2xl bg-[#000000] p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-forest-900/50 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-forest-800 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
               href="#0"
             >
@@ -133,8 +134,8 @@ export default function Workflows() {
                   </p>
                 </div>
               </div>
-            </a>
-            <a
+            </Link>
+            <Link
               className="group/card relative h-full overflow-hidden rounded-2xl bg-[#000000] p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-forest-900/50 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-forest-800 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
               href="#0"
             >
@@ -172,8 +173,8 @@ export default function Workflows() {
                   </p>
                 </div>
               </div>
-            </a>
-            <a
+            </Link>
+            <Link
               className="group/card relative h-full overflow-hidden rounded-2xl bg-[#000000] p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-forest-900/50 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-forest-800 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
               href="#0"
             >
@@ -211,8 +212,8 @@ export default function Workflows() {
                   </p>
                 </div>
               </div>
-            </a>
-            <a
+            </Link>
+            <Link
               className="group/card relative h-full overflow-hidden rounded-2xl bg-[#000000] p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-forest-900/50 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-forest-800 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
               href="#0"
             >
@@ -250,7 +251,7 @@ export default function Workflows() {
                   </p>
                 </div>
               </div>
-            </a>
+            </Link>
 
           </Spotlight>
         </div>
