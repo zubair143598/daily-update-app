@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="mt-12">
+    <footer className="mt-12 max-w-[1440px] mx-auto px-4 sm:px-6">
       {/* <div>
 
         <div className="relative mx-auto max-w-[1100px] px-4 sm:px-6">
@@ -69,7 +69,7 @@ export default function Footer() {
           alt="Footer Image"
           className="object-cover object-center h-full opacity-40"
         />
-        <div className="absolute md:-bottom-3  left-4 flex items-center w-full  my-auto h-full">
+        <div className="absolute md:-bottom-3  left-0 flex items-center w-full  my-auto h-full">
           <ul className="inline-flex gap-1">
             <li>
               <Link
@@ -127,7 +127,7 @@ export default function Footer() {
             className="object-center"
           />
         </div>
-        <div className="absolute md:-bottom-3 right-4 flex items-center my-auto h-full">
+        <div className="absolute md:-bottom-3 right-0 flex items-center my-auto h-full">
           <p className="font-raleway text-[16px] sm:text-lg font-light text-[#BABABA]">
             Copyright ® Lumunate 2024
           </p>
