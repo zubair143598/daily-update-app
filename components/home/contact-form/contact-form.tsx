@@ -51,7 +51,7 @@ export default function ContactFormClient() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col mb-10 inline-block p-4 w-full max-w-[700px]"
+      className="flex flex-col mb-10 w-full max-w-[700px]"
     >
       {submitStatus.message && (
         <div
