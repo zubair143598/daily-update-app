@@ -49,7 +49,7 @@ export default function WhyChooseUs() {
 
           {/* Items container with spotlight effect */}
           <div className="relative" ref={containerRef}>
-            <div className="mx-auto grid max-w-sm gap-2 sm:max-w-none sm:grid-cols-[auto_1px_auto] md:gap-x-12 md:gap-y-16 lg:grid-cols-[auto_1px_auto_1px_auto] bg-[linear-gradient(88.12deg,rgba(43,43,43,0.35)_3.17%,rgba(127,136,126,0.16)_52.41%,rgba(43,43,43,0.35)_94.35%)] py-20 px-8 border-[1px] border-[#374151] rounded-2xl">
+            <div className="mx-auto grid max-w-sm gap-2 sm:max-w-none sm:grid-cols-[auto_1px_auto] md:gap-x-12 md:gap-y-16 gap-y-12 lg:grid-cols-[auto_1px_auto_1px_auto] bg-[linear-gradient(88.12deg,rgba(43,43,43,0.35)_3.17%,rgba(127,136,126,0.16)_52.41%,rgba(43,43,43,0.35)_94.35%)] py-20 px-8 border-[1px] border-[#374151] rounded-2xl">
               <article>
                 <Image
                   className="mb-2"
@@ -73,8 +73,10 @@ export default function WhyChooseUs() {
                   we turn ideas into impactful digital experiences.
                 </p>
               </article>
-
+              {/* //vertical line for large screen */}
               <div className="hidden sm:block w-[1px] h-full bg-[linear-gradient(to_bottom,theme(colors.forest.900),theme(colors.forest.700),theme(colors.forest.900))]"></div>
+              {/* //horizontal line for small screen */}
+              <div className="sm:hidden block w-full h-[1px] bg-[linear-gradient(to_right,theme(colors.forest.900),theme(colors.forest.700),theme(colors.forest.900))]"></div>
 
               <article>
                 <Image
@@ -100,6 +102,8 @@ export default function WhyChooseUs() {
               </article>
 
               <div className="lg:block sm:hidden w-[1px] h-full bg-[linear-gradient(to_bottom,theme(colors.forest.900),theme(colors.forest.700),theme(colors.forest.900))]"></div>
+              {/* //horizontal line for small screen */}
+              <div className="sm:hidden block w-full h-[1px] bg-[linear-gradient(to_right,theme(colors.forest.900),theme(colors.forest.700),theme(colors.forest.900))]"></div>
 
               <article>
                 <Image
@@ -126,6 +130,8 @@ export default function WhyChooseUs() {
               </article>
 
               <div className="lg:hidden sm:block w-[1px] h-full bg-[linear-gradient(to_bottom,theme(colors.forest.900),theme(colors.forest.700),theme(colors.forest.900))]"></div>
+              {/* //horizontal line for small screen screen */}
+              <div className="sm:hidden block w-full h-[1px] bg-[linear-gradient(to_right,theme(colors.forest.900),theme(colors.forest.700),theme(colors.forest.900))]"></div>
 
               <article>
                 <Image
@@ -152,6 +158,8 @@ export default function WhyChooseUs() {
               </article>
 
               <div className="lg:block sm:hidden w-[1px] h-full bg-[linear-gradient(to_bottom,theme(colors.forest.900),theme(colors.forest.700),theme(colors.forest.900))]"></div>
+              {/* //horizontal line for small screen screen */}
+              <div className="sm:hidden block w-full h-[1px] bg-[linear-gradient(to_right,theme(colors.forest.900),theme(colors.forest.700),theme(colors.forest.900))]"></div>
 
               <article>
                 <Image
@@ -178,6 +186,8 @@ export default function WhyChooseUs() {
               </article>
 
               <div className="hidden sm:block w-[1px] h-full bg-[linear-gradient(to_bottom,theme(colors.forest.900),theme(colors.forest.700),theme(colors.forest.900))]"></div>
+              {/* //horizontal line for small screen screen */}
+              <div className="sm:hidden block w-full h-[1px] bg-[linear-gradient(to_right,theme(colors.forest.900),theme(colors.forest.700),theme(colors.forest.900))]"></div>
 
               <article>
                 <Image
@@ -216,7 +226,11 @@ export default function WhyChooseUs() {
           </div>
 
           <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center font-raleway mt-8">
-            <div className="flex justify-center" data-aos="fade-up" data-aos-delay={400}>
+            <div
+              className="flex justify-center"
+              data-aos="fade-up"
+              data-aos-delay={400}
+            >
               <Link
                 className="btn group mb-4 w-auto bg-gradient-to-t from-forest-600 to-forest-500 hover:brightness-50 hover:transition-all hover:duration-150 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_theme(colors.white/.16)] hover:bg-[length:100%_150%] sm:mb-0 rounded-full px-16"
                 href="https://calendly.com/saad-b-javaid22/consultation"
