@@ -67,7 +67,7 @@ export default function Footer() {
           width={2000}
           height={32}
           alt="Footer Image"
-          className="object-cover object-center h-full"
+          className="object-cover object-center h-full opacity-40"
         />
 
         <div className="absolute bottom-0 left-0 w-full flex justify-center my-auto h-full">
