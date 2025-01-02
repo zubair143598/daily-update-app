@@ -27,7 +27,7 @@ export default function ContactForm() {
                 width={24}
                 height={24}
               />
-              <span className="text-[20px]">marketing@luminate.com</span>
+              <span className="text-[20px] hover:text-forest-400">marketing@lumunate.com</span>
             </Link>
           </div>
           <div>
@@ -43,7 +43,7 @@ export default function ContactForm() {
                 width={24}
                 height={24}
               />
-              <span className="text-[20px]">+92 3361000001</span>
+              <span className="text-[20px] hover:text-forest-400">+92 3361000001</span>
             </Link>
           </div>
           <div className="flex items-center">
@@ -59,7 +59,7 @@ export default function ContactForm() {
                 width={24}
                 height={24}
               />
-              <span className="text-[20px]">+92 3310200888</span>
+              <span className="text-[20px] hover:text-forest-400">+92 3310200888</span>
             </Link>
           </div>
           <div className="flex items-center">
