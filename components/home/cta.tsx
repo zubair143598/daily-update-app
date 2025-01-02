@@ -8,11 +8,11 @@ export default function Cta() {
       <div className="pointer-events-none absolute bottom-0 left-1/2 -z-10 -mb-24 ml-20 -translate-x-1/2" aria-hidden="true">
         <Image className="max-w-none" src={BlurredShape} width={760} height={668} alt="Blurred shape" />
       </div>
-      <div className="mx-auto">
+      <div className="mx-auto max-w-[1440px] px-4 sm:px-6">
         <div className="bg-gradient-to-r from-[rgba(5,5,5,0.5)] via-forest-800/10 to-[rgba(5,5,5,0.5)] py-12 md:py-20">
           <div className="mx-auto max-w-3xl text-center">
             <h2
-              className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.forest.200),theme(colors.gray.50),theme(colors.forest.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text font-menda text-3xl font-semibold text-transparent md:text-4xl"
+              className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.forest.200),theme(colors.gray.50),theme(colors.forest.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text font-menda text-[1.3rem] font-semibold text-transparent md:text-4xl"
               data-aos="fade-up"
             >
               Let’s Build Your Vision Together

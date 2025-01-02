@@ -10,7 +10,7 @@ export default function HeroHome() {
           {/* Section header */}
           <div className="text-center">
             <h1
-              className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.forest.200),theme(colors.gray.50),theme(colors.forest.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-5 font-menda text-4xl font-medium text-transparent md:text-5xl max-w-5xl mx-auto"
+              className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.forest.200),theme(colors.gray.50),theme(colors.forest.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-5 font-menda text-[1.3rem] font-medium text-transparent md:text-5xl max-w-5xl mx-auto"
               data-aos="fade-up"
             >
               Empowering Your Business with
@@ -18,7 +18,7 @@ export default function HeroHome() {
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
-                className="mb-8 text-xl text-[#E8FFF8]/65 font-normal"
+                className="mb-8 text-lg md:text-xl text-[#E8FFF8]/65 font-normal"
                 data-aos="fade-up"
                 data-aos-delay={200}
               >
