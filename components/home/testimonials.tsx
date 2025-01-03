@@ -3,6 +3,44 @@
 import useMasonry from "@/utils/useMasonry";
 import Image from "next/image";
 import flagsLinks from "./flags/Flags";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { useEffect, useState } from "react";
+
+const responsive = {
+  superLargeDesktop: {
+    breakpoint: { max: 4000, min: 3000 },
+    items: 1,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 1,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 1,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
+function useIsDesktopOrAbove() {
+    const [isDesktopOrAbove, setIsDesktopOrAbove] = useState(window.innerWidth >= 1024);
+  
+    useEffect(() => {
+      const handleResize = () => {
+        setIsDesktopOrAbove(window.innerWidth >= 1024);
+      };
+  
+      window.addEventListener("resize", handleResize);
+  
+      // Cleanup event listener on component unmount
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+  
+    return isDesktopOrAbove;
+  }
 
 const testimonials = [
   {
@@ -142,6 +180,7 @@ const testimonials = [
 ];
 
 export default function Testimonials() {
+  const isDesktopOrAbove = useIsDesktopOrAbove();
   const masonryContainer = useMasonry();
 
   return (
@@ -163,16 +202,39 @@ export default function Testimonials() {
         <div>
           {/* Cards */}
           <div
-            className="mx-auto grid max-w-sm items-start gap-6 sm:max-w-none sm:grid-cols-2 lg:grid-cols-3"
+            className="mx-auto max-w-sm items-start gap-x-6 space-x-9 sm:max-w-none "
             ref={masonryContainer}
           >
-            {testimonials.map((testimonial, index) => (
+            <Carousel
+              responsive={responsive}
+              autoPlay={false}
+              autoPlaySpeed={3000}
+              infinite={true}
+              arrows={true}
+              swipeable={true}
+              centerMode={isDesktopOrAbove} // Enable center mode
+              focusOnSelect={true} // Focus the center item when clicked
+              customTransition="transform 300ms ease-in-out"
+            >
+              {testimonials.map((testimonial, index) => (
+                <div
+                  data-aos="fade-up"
+                  key={index}
+                  className="group flex h-full sm:w-[640px] w-[358px]"
+                >
+                  <Testimonial testimonial={testimonial}>
+                    {testimonial.content}
+                  </Testimonial>
+                </div>
+              ))}
+            </Carousel>
+            {/* {testimonials.map((testimonial, index) => (
               <div  data-aos="fade-up" key={index} className="group flex h-full">
                 <Testimonial testimonial={testimonial}>
                   {testimonial.content}
                 </Testimonial>
               </div>
-            ))}
+            ))} */}
           </div>
         </div>
       </div>
