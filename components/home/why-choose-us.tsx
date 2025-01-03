@@ -50,7 +50,7 @@ export default function WhyChooseUs() {
           {/* Items container with spotlight effect */}
           <div className="relative" ref={containerRef}>
             <div className="mx-auto grid max-w-sm gap-2 sm:max-w-none sm:grid-cols-[auto_1px_auto] md:gap-x-12 md:gap-y-16 gap-y-12 lg:grid-cols-[auto_1px_auto_1px_auto] bg-[linear-gradient(88.12deg,rgba(43,43,43,0.35)_3.17%,rgba(127,136,126,0.16)_52.41%,rgba(43,43,43,0.35)_94.35%)] py-20 px-8 border-[1px] border-[#374151] rounded-2xl">
-              <article>
+              <article data-aos="fade-up">
                 <Image
                   className="mb-2"
                   src="/images/icons/Frame 2.svg"
@@ -78,7 +78,7 @@ export default function WhyChooseUs() {
               {/* //horizontal line for small screen */}
               <div className="sm:hidden block w-full h-[1px] bg-[linear-gradient(to_right,theme(colors.forest.900),theme(colors.forest.700),theme(colors.forest.900))]"></div>
 
-              <article>
+              <article data-aos="fade-up">
                 <Image
                   className="mb-2"
                   src="/images/icons/workflow.svg"
@@ -105,7 +105,7 @@ export default function WhyChooseUs() {
               {/* //horizontal line for small screen */}
               <div className="sm:hidden block w-full h-[1px] bg-[linear-gradient(to_right,theme(colors.forest.900),theme(colors.forest.700),theme(colors.forest.900))]"></div>
 
-              <article>
+              <article data-aos="fade-up">
                 <Image
                   className="mb-2"
                   src="/images/icons/market-analysis.svg"
@@ -133,7 +133,7 @@ export default function WhyChooseUs() {
               {/* //horizontal line for small screen screen */}
               <div className="sm:hidden block w-full h-[1px] bg-[linear-gradient(to_right,theme(colors.forest.900),theme(colors.forest.700),theme(colors.forest.900))]"></div>
 
-              <article>
+              <article data-aos="fade-up">
                 <Image
                   className="mb-2"
                   src="/images/icons/network-tree.svg"
@@ -161,7 +161,7 @@ export default function WhyChooseUs() {
               {/* //horizontal line for small screen screen */}
               <div className="sm:hidden block w-full h-[1px] bg-[linear-gradient(to_right,theme(colors.forest.900),theme(colors.forest.700),theme(colors.forest.900))]"></div>
 
-              <article>
+              <article data-aos="fade-up">
                 <Image
                   className="mb-2"
                   src="/images/icons/Lock-Cloud.svg"
@@ -189,7 +189,7 @@ export default function WhyChooseUs() {
               {/* //horizontal line for small screen screen */}
               <div className="sm:hidden block w-full h-[1px] bg-[linear-gradient(to_right,theme(colors.forest.900),theme(colors.forest.700),theme(colors.forest.900))]"></div>
 
-              <article>
+              <article data-aos="fade-up">
                 <Image
                   className="mb-2"
                   src="/images/icons/file-securtiry.svg"

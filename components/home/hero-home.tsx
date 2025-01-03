@@ -14,7 +14,7 @@ export default function HeroHome() {
               data-aos="fade-up"
             >
               Empowering Your Business with
-              Cutting-Edge Digital Solutions
+              Cutting-Edge Digital Solutions 
             </h1>
             <div className="mx-auto max-w-3xl">
               <p

@@ -49,7 +49,7 @@ export default function ContactFormClient() {
   };
 
   return (
-    <form
+    <form data-aos="fade-up"
       onSubmit={handleSubmit(onSubmit)}
       className="flex flex-col mb-10 w-full max-w-[700px]"
     >
