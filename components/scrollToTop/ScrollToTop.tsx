@@ -29,7 +29,7 @@ export default function ScrollToTop() {
     return (
         <>
       {showScroll && (
-        <StyledArrow size={55} className=' text-forest-800 hover:bg-gray-700 p-2 rounded-full' onClick={() => window.scrollTo(0, 0)} />
+        <StyledArrow size={40} className=' text-forest-800 hover:text-forest-500 hover:bg-gray-700 p-[6px] rounded-full' onClick={() => window.scrollTo(0, 0)} />
       )}
     </>
     );
