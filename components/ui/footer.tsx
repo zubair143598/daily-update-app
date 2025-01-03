@@ -128,7 +128,7 @@ export default function Footer() {
           />
         </div>
         <div className="absolute md:-bottom-3 right-0 flex items-center my-auto h-full">
-          <p className="font-raleway text-[16px] sm:text-lg font-light text-[#BABABA]">
+          <p className="font-raleway text-[12px] sm:text-[14px] font-light text-[#BABABA]">
             Copyright ® Lumunate 2024
           </p>
         </div>

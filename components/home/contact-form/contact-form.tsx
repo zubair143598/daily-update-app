@@ -51,7 +51,7 @@ export default function ContactFormClient() {
   return (
     <form data-aos="fade-up"
       onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col mb-10 w-full max-w-[700px]"
+      className="flex flex-col w-full max-w-[700px]"
     >
       {submitStatus.message && (
         <div
