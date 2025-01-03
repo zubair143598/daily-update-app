@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export default function HeroHome() {
   return (
-    <section>
-      <div className="mx-auto max-w-[1440px] px-4 sm:px-6">
+    <section style={{height:"calc(100vh - 77px"}} className=" ">
+      <div className="mx-auto max-w-[1440px] h-full px-4 sm:px-6">
         {/* Hero content */}
-        <div className="py-12 md:py-20">
+        <div className="pb-12 pt-8 md:pb-20 h-full">
           {/* Section header */}
-          <div className="text-center">
+          <div className="text-center h-full flex flex-col">
             <h1
               className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.forest.200),theme(colors.gray.50),theme(colors.forest.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-5 font-menda text-[1.3rem] font-medium text-transparent md:text-4xl max-w-5xl mx-auto"
               data-aos="fade-up"
@@ -25,9 +25,10 @@ export default function HeroHome() {
               </p>
             </div>
 
-            <div className="max-w-[1440px] -ml-3 w-full" data-aos="fade-up">
+            <div className="max-w-[1440px] overflow-hidden flex-1  -ml-3 w-full" data-aos="fade-up">
               <Image
                 src={'/images/Illustration.png'}
+                className=" !h-full object-cover object-center"
                 width={1623}
                 height={538}
                 layout="responsive"
