@@ -9,15 +9,15 @@ export default function Cta() {
         <Image className="max-w-none" src={BlurredShape} width={760} height={668} alt="Blurred shape" />
       </div>
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6">
-        <div className="bg-gradient-to-r from-[rgba(5,5,5,0.5)] via-forest-800/10 to-[rgba(5,5,5,0.5)] py-12 md:py-20">
+        <div className="bg-gradient-to-r from-[rgba(5,5,5,0.5)] via-forest-800/10 to-[rgba(5,5,5,0.5)] pt-12 md:pt-20">
           <div className="mx-auto max-w-3xl text-center">
             <h2
-              className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.forest.200),theme(colors.gray.50),theme(colors.forest.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text font-menda text-[1.3rem] font-semibold text-transparent md:text-4xl"
+              className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.forest.200),theme(colors.gray.50),theme(colors.forest.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text font-menda text-[1.3rem] font-medium text-transparent md:text-4xl"
               data-aos="fade-up"
             >
               Let’s Build Your Vision Together
             </h2>
-            <p className="text-xl text-forest-200/65 md:text-2xl font-raleway mb-4">
+            <p className="text-forest-200/65 text-[18px] font-raleway mb-4">
               Transform your ideas into reality with our cutting-edge web, mobile and IT solutions. Take the first step toward
               digital excellence today!
             </p>
