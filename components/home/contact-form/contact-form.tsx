@@ -78,7 +78,7 @@ export default function ContactFormClient() {
               "linear-gradient(95.8deg, rgba(0, 28, 19, 1) 0%, rgb(0, 162, 112) 50%, rgba(0, 28, 19, 0.3) 111.5%)",
             borderImageSlice: 1,
           }}
-          className="w-full h-[49px] mt-[15px] focus:ring-[rgb(0,162,112)] bg-transparent text-white rounded-md"
+          className="w-full h-[49px] mt-[15px] focus:ring-[rgb(0,162,112)] bg-transparent text-white border-x-0"
         />
         {errors.name && <p className="text-red-500">{errors.name.message}</p>}
       </div>
@@ -96,7 +96,7 @@ export default function ContactFormClient() {
               "linear-gradient(95.8deg, rgba(0, 28, 19, 1) 0%, rgb(0, 162, 112) 50%, rgba(0, 28, 19, 0.3) 111.5%)",
             borderImageSlice: 1,
           }}
-          className="w-full h-[49px] mt-[15px] focus:ring-[rgb(0,162,112)] bg-transparent text-white border-x-[0.5px] rounded-lg"
+          className="w-full h-[49px] mt-[15px] focus:ring-[rgb(0,162,112)] bg-transparent text-white border-x-0"
         />
         {errors.email && <p className="text-red-500">{errors.email.message}</p>}
       </div>
@@ -113,7 +113,7 @@ export default function ContactFormClient() {
               "linear-gradient(95.8deg, rgba(0, 28, 19, 1) 0%, rgb(0, 162, 112) 50%, rgba(0, 28, 19, 0.3) 111.5%)",
             borderImageSlice: 1,
           }}
-          className="w-full focus:ring-[rgb(0,162,112)] mt-[15px] bg-transparent text-white border-x-[0.5px] rounded-md min-h-[142px]"
+          className="w-full focus:ring-[rgb(0,162,112)] mt-[15px] bg-transparent text-white border-x-0 min-h-[142px]"
         />
         {errors.message && (
           <p className="text-red-500">{errors.message.message}</p>
