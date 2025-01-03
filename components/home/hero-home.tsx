@@ -17,7 +17,7 @@ export default function HeroHome() {
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
-                className="mb-8 text-lg text-[#E8FFF8]/65"
+                className="mb-8 text-[14px] sm:text-lg text-[#E8FFF8]/65"
                 data-aos="fade-up"
                 data-aos-delay={200}
               >
