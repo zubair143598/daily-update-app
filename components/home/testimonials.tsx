@@ -167,7 +167,7 @@ export default function Testimonials() {
             ref={masonryContainer}
           >
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="group flex h-full">
+              <div  data-aos="fade-up" key={index} className="group flex h-full">
                 <Testimonial testimonial={testimonial}>
                   {testimonial.content}
                 </Testimonial>

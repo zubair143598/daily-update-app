@@ -13,7 +13,7 @@ export default function ContactForm() {
           <span className="block">Let&apos;s</span>
           <span className="block">Connect</span>
         </h2>
-        <div className="md:flex flex-col justify-center mt-4 gap-y-2 h-full content-center  hidden">
+        <div  data-aos="fade-up"  className="md:flex flex-col justify-center mt-4 gap-y-2 h-full content-center  hidden">
           <div>
             <Link
               href="mailto: marketing@luminate.com"
@@ -80,7 +80,7 @@ export default function ContactForm() {
         </h2>
         <ContactFormClient/>
       </div>
-      <div className="flex flex-col justify-center flex-wrap  mt-4 gap-y-2 h-full content-center  md:hidden">
+      <div data-aos="fade-up" className="flex flex-col justify-center flex-wrap  mt-4 gap-y-2 h-full content-center  md:hidden">
           <div>
             <Link
               href="mailto: marketing@luminate.com"
