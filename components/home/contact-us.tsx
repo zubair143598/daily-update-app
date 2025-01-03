@@ -12,7 +12,7 @@ export default function ContactForm() {
         <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.forest.200),theme(colors.gray.50),theme(colors.forest.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text font-menda text-[1.3rem] font-medium text-transparent md:text-4xl text-center">
           Let&apos;s <br className="md:block hidden"/>Connect
         </h2>
-        <div  data-aos="fade-up"  className="md:flex flex-col justify-center -mt-6 gap-y-2 h-full content-center  hidden">
+        <div  data-aos="fade-up"  className="md:flex flex-col justify-center gap-y-2 h-full content-center  hidden">
           <div>
             <Link
               href="mailto: marketing@luminate.com"
