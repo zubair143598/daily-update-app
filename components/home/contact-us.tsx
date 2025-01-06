@@ -17,7 +17,6 @@ export default function ContactForm() {
             <Link
               href="mailto: marketing@luminate.com"
               className="flex items-center"
-              target="blank"
             >
               <Image
                 src="/images/icons/mail-outline.svg"
@@ -33,7 +32,6 @@ export default function ContactForm() {
             <Link
               href="tel: +923361000001"
               className="flex items-center"
-              target="blank"
             >
               <Image
                 src="/images/icons/phone-flip.svg"
@@ -49,7 +47,6 @@ export default function ContactForm() {
             <Link
               href="https://wa.me/+923310200888"
               className="flex items-center"
-              target="blank"
             >
               <Image
                 src="/images/icons/whatsapp.svg"
@@ -84,7 +81,6 @@ export default function ContactForm() {
             <Link
               href="mailto: marketing@luminate.com"
               className="flex items-center"
-              target="blank"
             >
               <Image
                 src="/images/icons/mail-outline.svg"
@@ -100,7 +96,6 @@ export default function ContactForm() {
             <Link
               href="tel: +923361000001"
               className="flex items-center"
-              target="blank"
             >
               <Image
                 src="/images/icons/phone-flip.svg"
@@ -116,7 +111,6 @@ export default function ContactForm() {
             <Link
               href="https://wa.me/+923310200888"
               className="flex items-center"
-              target="blank"
             >
               <Image
                 src="/images/icons/whatsapp.svg"
