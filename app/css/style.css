@@ -14,3 +14,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+.react-multi-carousel-item {
+  display:flex;
+  align-items: center;
+}
