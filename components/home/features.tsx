@@ -43,7 +43,7 @@ export default function Features() {
           </div> */}
           {/* Items */}
           <div className="mx-auto grid max-w-sm gap-12 sm:max-w-none sm:grid-cols-2 md:gap-x-14 md:gap-y-16 lg:grid-cols-3">
-            <article data-aos="fade-up">
+            <article data-aos="fade-up" data-aos-offset="400">
               <Image className="mb-2" src={'/images/icons/webdev.svg'} width={29} height={24} alt="Web Development and Design" /> 
               <h3 className="mb-1 font-menda font-semibold text-[1rem] text-gray-200">Web Development and Design</h3>
               <p className="text-white/85">
@@ -66,7 +66,7 @@ export default function Features() {
                 <Image src={'/images/icons/flask-original.svg'} width={50} height={30} alt="Icon" className="invert" />
               </div>
             </article>
-            <article data-aos="fade-up">
+            <article data-aos="fade-up" data-aos-offset="400">
             <Image className="mb-2" src={'/images/icons/mobile-programming.svg'} width={29} height={24} alt="Web Development and Design" /> 
               <h3 className="mb-1 font-menda text-[1rem] font-semibold text-gray-200">Mobile App Development</h3>
               <p className="text-white/85">
@@ -83,7 +83,7 @@ export default function Features() {
               </div>
 
             </article>
-            <article data-aos="fade-up">
+            <article data-aos="fade-up" data-aos-offset="400">
             <Image className="mb-2" src={'/images/icons/data.svg'} width={29} height={24} alt="Web Development and Design" /> 
               <h3 className="mb-1 font-menda text-[1rem] font-semibold text-gray-200">Systems Integration</h3>
               <p className="text-white/85">
@@ -99,7 +99,7 @@ export default function Features() {
               </div>
 
             </article>
-            <article data-aos="fade-up">
+            <article data-aos="fade-up" data-aos-offset="400">
             <Image className="mb-2" src={'/images/icons/Lock-Cloud.svg'} width={29} height={24} alt="Web Development and Design" /> 
               <h3 className="mb-1 font-menda text-[1rem] font-semibold text-gray-200">IT Consulting & Cloud Solutions</h3>
               <p className="text-white/85">
@@ -115,7 +115,7 @@ export default function Features() {
               </div>
 
             </article>
-            <article data-aos="fade-up">
+            <article data-aos="fade-up" data-aos-offset="400">
             <Image className="mb-2" src={'/images/icons/megaphone.svg'} width={29} height={24} alt="Web Development and Design" /> 
               <h3 className="mb-1 font-menda text-[1rem] font-semibold text-gray-200">Digital Marketing Services</h3>
               <p className="text-white/85">
@@ -123,7 +123,7 @@ export default function Features() {
                 that maximize your ROI and drive measurable growth{" "}
               </p>
             </article>
-            <article data-aos="fade-up">
+            <article data-aos="fade-up" data-aos-offset="400">
             <Image className="mb-2" src={'/images/icons/note-favorite.svg'} width={29} height={24} alt="Web Development and Design" />  
               <h3 className="mb-1 font-menda text-[1rem] font-semibold text-gray-200">Custom CMS Development</h3>
               <p className="text-white/85">
