@@ -5,7 +5,8 @@ import Image from "next/image";
 import flagsLinks from "./flags/Flags";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { responsive, useIsDesktopOrAbove } from "@/utils/carouselResponsive";
+import { responsive } from "@/utils/responsive-carousel-options";
+import useIsDesktopOrAbove from "@/utils/useIsDesktopOrAbove";
 import { useState } from "react";
 
 const testimonials = [
