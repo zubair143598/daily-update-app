@@ -5,42 +5,7 @@ import Image from "next/image";
 import flagsLinks from "./flags/Flags";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { useEffect, useState } from "react";
-
-const responsive = {
-  superLargeDesktop: {
-    breakpoint: { max: 4000, min: 3000 },
-    items: 1,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 1,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 1,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-  },
-};
-function useIsDesktopOrAbove() {
-    const [isDesktopOrAbove, setIsDesktopOrAbove] = useState(window.innerWidth >= 1024);
-  
-    useEffect(() => {
-      const handleResize = () => {
-        setIsDesktopOrAbove(window.innerWidth >= 1024);
-      };
-  
-      window.addEventListener("resize", handleResize);
-  
-      // Cleanup event listener on component unmount
-      return () => window.removeEventListener("resize", handleResize);
-    }, []);
-  
-    return isDesktopOrAbove;
-  }
+import { responsive, useIsDesktopOrAbove } from "@/utils/carouselResponsive";
 
 const testimonials = [
   {
