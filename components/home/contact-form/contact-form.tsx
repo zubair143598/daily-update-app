@@ -123,7 +123,7 @@ export default function ContactFormClient() {
       <div className="mx-auto">
         <button
           type="submit"
-          className="btn  group mb-4 w-full bg-gradient-to-t from-forest-600 to-forest-500 hover:brightness-50 hover:transition-all hover:duration-150 text-white rounded-full px-8 py-3 text-[16px]"
+          className="btn  group mb-4 w-full bg-gradient-to-t from-forest-600 to-forest-500 hover:bg-gradient-to-t hover:from-forest-800 hover:to-forest-900 hover:transition-all hover:duration-150 text-white rounded-full px-8 py-3 text-[16px]"
         >
           <span className="relative inline-flex items-center">
             Send Message

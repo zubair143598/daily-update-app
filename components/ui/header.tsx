@@ -37,7 +37,7 @@ export default function Header() {
               <Link
                 href="https://calendly.com/saad-b-javaid22/consultation"
                 target="_blank"
-                className="btn-sm  bg-gradient-to-t from-forest-600 to-forest-500 hover:brightness-50 hover:transition-all hover:duration-150 bg-[length:100%_100%] bg-[bottom] py-[5px] text-white shadow-[inset_0px_1px_0px_0px_theme(colors.white/.16)] hover:bg-[length:100%_150%]"
+                className="btn-sm  bg-gradient-to-t from-forest-600 to-forest-500  hover:bg-gradient-to-t hover:from-forest-800 hover:to-forest-900 hover:transition-all hover:duration-150 bg-[length:100%_100%] bg-[bottom] py-[5px] text-white shadow-[inset_0px_1px_0px_0px_theme(colors.white/.16)] hover:bg-[length:100%_150%]"
               >
                 Let&apos;s Talk
               </Link>
