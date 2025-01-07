@@ -49,9 +49,9 @@ export default function ContactFormClient() {
   };
 
   return (
-    <form
+    <form data-aos="fade-up"
       onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col mb-10 inline-block p-4 w-full max-w-[700px]"
+      className="flex flex-col w-full max-w-[700px]"
     >
       {submitStatus.message && (
         <div
@@ -78,7 +78,7 @@ export default function ContactFormClient() {
               "linear-gradient(95.8deg, rgba(0, 28, 19, 1) 0%, rgb(0, 162, 112) 50%, rgba(0, 28, 19, 0.3) 111.5%)",
             borderImageSlice: 1,
           }}
-          className="w-full h-[49px] mt-[15px] focus:ring-[rgb(0,162,112)] bg-transparent text-white rounded-md"
+          className="w-full h-[49px] mt-[15px] focus:ring-[rgb(0,162,112)] bg-transparent text-white border-x-0"
         />
         {errors.name && <p className="text-red-500">{errors.name.message}</p>}
       </div>
@@ -96,9 +96,63 @@ export default function ContactFormClient() {
               "linear-gradient(95.8deg, rgba(0, 28, 19, 1) 0%, rgb(0, 162, 112) 50%, rgba(0, 28, 19, 0.3) 111.5%)",
             borderImageSlice: 1,
           }}
-          className="w-full h-[49px] mt-[15px] focus:ring-[rgb(0,162,112)] bg-transparent text-white border-x-[0.5px] rounded-lg"
+          className="w-full h-[49px] mt-[15px] focus:ring-[rgb(0,162,112)] bg-transparent text-white border-x-0"
         />
         {errors.email && <p className="text-red-500">{errors.email.message}</p>}
+      </div>
+
+      <div className="mb-[31px]">
+        <label className="text-[#BABABA] mb-2">Project Type</label>
+        <select
+          {...register("projectType")}
+          className="w-full h-[49px] mt-[15px] focus:ring-[rgb(0,162,112)] text-[#BABABA] bg-transparent  border-x-0"
+          style={{
+            borderTopWidth: "1px",
+            borderBottomWidth: "1px",
+            borderImageSource:
+              "linear-gradient(95.8deg, rgba(0, 28, 19, 1) 0%, rgb(0, 162, 112) 50%, rgba(0, 28, 19, 0.3) 111.5%)",
+            borderImageSlice: 1,
+          }}
+        >
+          <option className=" bg-black" value="">Select Project Type</option>
+          <option className=" bg-black" value="uiux">UI/UX Design</option>
+          <option className=" bg-black" value="webDev">Web Development and Design</option>
+          <option className=" bg-black" value="mobileDev">Mobile App Development</option>
+          <option className=" bg-black" value="digitalMarketing">Custom CMS Development</option>
+          <option className=" bg-black" value="digitalMarketing">Systems Integration</option>
+          <option className=" bg-black" value="digitalMarketing">IT Consulting & Cloud Solutions</option>
+          <option className=" bg-black" value="digitalMarketing">Digital Marketing Services</option>
+          <option className=" bg-black" value="digitalMarketing">Other</option>
+        </select>
+        {errors.projectType && (
+          <p className="text-red-500">{errors.projectType.message}</p>
+        )}
+      </div>
+
+      <div className="mb-[31px]">
+        <label className="text-[#BABABA] mb-2">Preferred Contact Method</label>
+        <select
+          {...register("preferredContactMethod")}
+          className="w-full h-[49px] mt-[15px] focus:ring-[rgb(0,162,112)] bg-transparent text-[#BABABA] border-x-0"
+          style={{
+            borderTopWidth: "1px",
+            borderBottomWidth: "1px",
+            borderImageSource:
+              "linear-gradient(95.8deg, rgba(0, 28, 19, 1) 0%, rgb(0, 162, 112) 50%, rgba(0, 28, 19, 0.3) 111.5%)",
+            borderImageSlice: 1,
+          }}
+        >
+          <option className=" bg-black" value="">Select Contact Method</option>
+          <option className=" bg-black" value="email">Email</option>
+          <option className=" bg-black" value="whatsapp">WhatsApp</option>
+          <option className=" bg-black" value="email">Skype</option>
+          <option className=" bg-black" value="whatsapp">Phone Call</option>
+        </select>
+        {errors.preferredContactMethod && (
+          <p className="text-red-500">
+            {errors.preferredContactMethod.message}
+          </p>
+        )}
       </div>
 
       <div className="mb-[31px]">
@@ -113,7 +167,7 @@ export default function ContactFormClient() {
               "linear-gradient(95.8deg, rgba(0, 28, 19, 1) 0%, rgb(0, 162, 112) 50%, rgba(0, 28, 19, 0.3) 111.5%)",
             borderImageSlice: 1,
           }}
-          className="w-full focus:ring-[rgb(0,162,112)] mt-[15px] bg-transparent text-white border-x-[0.5px] rounded-md min-h-[142px]"
+          className="w-full focus:ring-[rgb(0,162,112)] mt-[15px] bg-transparent text-white border-x-0 min-h-[142px]"
         />
         {errors.message && (
           <p className="text-red-500">{errors.message.message}</p>
@@ -123,10 +177,10 @@ export default function ContactFormClient() {
       <div className="mx-auto">
         <button
           type="submit"
-          className="btn  group mb-4 w-full bg-gradient-to-t from-forest-600 to-forest-500 hover:bg-forest-800 hover:from-transparent hover:to-transparent text-white rounded-full px-8 py-3 text-[16px]"
+          className="btn  group mb-4 w-full bg-gradient-to-t from-forest-600 to-forest-500 hover:bg-gradient-to-t hover:from-forest-800 hover:to-forest-900 hover:transition-all hover:duration-150 text-white rounded-full px-8 py-3 text-[16px]"
         >
           <span className="relative inline-flex items-center">
-            Send Message
+          Submit
           </span>
         </button>
       </div>
