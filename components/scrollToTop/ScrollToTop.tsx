@@ -1,36 +1,30 @@
 "use client"
-import styled from 'styled-components';
-import { FaChevronUp } from "react-icons/fa6";
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
-const StyledArrow = styled(FaChevronUp )`
-  position: fixed;
-  bottom: 40px;
-  right: 50px;
-  z-index: 1000;
-  cursor: pointer;
-  animation: fadeIn 0.3s;
-  transition: opacity 0.4s;
-`;
-
 export default function ScrollToTop() {
-    const [scrollPosition, setScrollPosition] = useState(0);;
-//   const { showScroll, scrollTop } = useScrollToTop({ pageYOffset: 200 });
+  const [scrollPosition, setScrollPosition] = useState(0);
 
+  // Track scroll position
   useEffect(() => {
     const handleScroll = () => {
-        setScrollPosition(window.scrollY);
-      };
-      window.addEventListener('scroll', handleScroll);
-      return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-  
-    const showScroll = scrollPosition > 200;
-    return (
-        <>
+      setScrollPosition(window.scrollY);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  const showScroll = scrollPosition > 200;
+
+  return (
+    <>
       {showScroll && (
-        <StyledArrow size={40} className=' text-forest-800 hover:text-forest-500 hover:bg-gray-700 p-[6px] rounded-full' onClick={() => window.scrollTo(0, 0)} />
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="fixed bottom-10 right-10 z-50 bg-forest-500 hover:bg-forest-800 text-white p-2 rounded-full transition-all duration-150"
+        >
+          <Image src="/chevron-up.svg" width={30} height={30} alt='lumunate_scrollToTop'/>
+        </button>
       )}
     </>
-    );
-  }
+  );
+}

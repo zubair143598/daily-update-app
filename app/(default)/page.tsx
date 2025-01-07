@@ -26,7 +26,6 @@ import Cta from "@/components/home/cta";
 import WhyChooseUs from "@/components/home/why-choose-us";
 import ContactForm from "@/components/home/contact-us";
 
-
 export default function Home() {
   return (
     <>
