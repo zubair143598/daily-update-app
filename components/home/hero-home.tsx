@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function HeroHome() {
   return (
-    <section style={{ height: "calc(100vh - 77px" }} className=" ">
+    <section style={{height:"calc(100vh - 77px"}} className=" ">
       <div className="mx-auto max-w-[1440px] h-full px-4 sm:px-6">
         {/* Hero content */}
         <div className="pb-12 pt-8 md:pb-20 h-full">
@@ -16,6 +16,7 @@ export default function HeroHome() {
               Empowering Your Business with
               <br />
               Cutting-Edge Digital Solutions
+
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
@@ -28,7 +29,7 @@ export default function HeroHome() {
                 fast-paced digital world.
               </p>
             </div>
-
+            
             <div
               className="max-w-[1440px] overflow-hidden flex-1  -ml-3 w-full"
               data-aos="fade-up"
