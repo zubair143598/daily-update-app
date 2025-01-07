@@ -24,7 +24,7 @@ const testimonials = [
   },
   {
     id: 2,
-    clientImg: "/images/logos/dify.png",
+    clientImg: "/images/logos/dify-ai.png",
     name: "Luc Elsby",
     company: "Dify.AI",
     flag: flagsLinks.uk,
@@ -213,13 +213,6 @@ export default function Testimonials() {
                 </div>
               ))}
             </Carousel>
-            {/* {testimonials.map((testimonial, index) => (
-              <div  data-aos="fade-up" key={index} className="group flex h-full">
-                <Testimonial testimonial={testimonial}>
-                  {testimonial.content}
-                </Testimonial>
-              </div>
-            ))} */}
           </div>
         </div>
       </div>
@@ -274,11 +267,9 @@ export function Testimonial({
         <div className="flex items-center gap-3">
           <div className="text-sm font-medium text-gray-200">
             <span>{testimonial.name}</span>
-            {testimonial.company ? (
+            {testimonial.company && (
               <span className="text-gray-700"> - </span>
-            ) : (
-              ""
-            )}
+            ) }
             <span className="text-forest-200/65 transition-colors hover:text-forest-500">
               {testimonial.company}
             </span>
