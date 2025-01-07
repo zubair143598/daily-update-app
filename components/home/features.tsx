@@ -6,13 +6,13 @@ export default function Features() {
   return (
     <section id="services" className="relative">
       <div className="pointer-events-none absolute left-1/2 top-0 -z-10 -mt-20 -translate-x-1/2" aria-hidden="true">
-        <Image className="max-w-none" src={BlurredShapeGray} width={760} height={668} alt="Blurred shape" />
+        <Image className="max-w-none" src={BlurredShapeGray} width={760} height={668} alt="Lumunate - Blurred shape" />
       </div>
       <div
         className="pointer-events-none absolute bottom-0 left-1/2 -z-10 -mb-80 -translate-x-[120%] opacity-50"
         aria-hidden="true"
       >
-        <Image className="max-w-none" src={BlurredShape} width={760} height={668} alt="Blurred shape" />
+        <Image className="max-w-none" src={BlurredShape} width={760} height={668} alt="Lumunate - Blurred shape" />
       </div>
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6">
         <div className="py-12 md:py-20">
@@ -44,7 +44,7 @@ export default function Features() {
           {/* Items */}
           <div className="mx-auto grid max-w-sm gap-12 sm:max-w-none sm:grid-cols-2 md:gap-x-14 md:gap-y-16 lg:grid-cols-3">
             <article data-aos="fade-up" data-aos-offset="400">
-              <Image className="mb-2" src={'/images/icons/webdev.svg'} width={29} height={24} alt="Web Development and Design" /> 
+              <Image className="mb-2" src={'/images/icons/webdev.svg'} width={29} height={24} alt="Lumunate - Web Development and Design" /> 
               <h3 className="mb-1 font-menda font-semibold text-[1rem] text-gray-200">Web Development and Design</h3>
               <p className="text-white/85">
                 Delivering visually appealing, user-friendly and extensive web applications is at the core of what we do. From
@@ -52,22 +52,24 @@ export default function Features() {
                 optimization and cross-browser compatibility
               </p>
               <div className="flex gap-3 flex-wrap mt-4">
-                <Image src={'/images/icons/react-original.svg'} width={50} height={30} alt="Icon" />
-                <Image src={'/images/icons/vuejs-original.svg'} width={50} height={30} alt="Icon" />
-                <Image src={'/images/icons/angular-original.svg'} width={50} height={30} alt="Icon" />
-                <Image src={'/images/icons/nextjs-original.svg'} width={60} height={30} alt="Icon" />
-                <Image src={'/images/icons/nuxtjs-original.svg'} width={50} height={30} alt="Icon" />
-                <Image src={'/images/icons/nestjs-original.svg'} width={50} height={30} alt="Icon" />
-                <Image src={'/images/icons/nodejs-original.svg'} width={50} height={30} alt="Icon" />
-                <Image src={'/images/icons/laravel-original.svg'} width={50} height={30} alt="Icon" />
-                <Image src={'/images/icons/rust-original.svg'} width={50} height={30} alt="Icon" className="invert" />
-                <Image src={'/images/icons/go-original.svg'} width={50} height={30} alt="Icon" />
-                <Image src={'/images/icons/rails-plain.svg'} width={50} height={30} alt="Icon" />
-                <Image src={'/images/icons/flask-original.svg'} width={50} height={30} alt="Icon" className="invert" />
+                <Image src={'/images/icons/react-original.svg'} width={50} height={30} alt="Lumunate - Tech Reactjs" />
+                <Image src={'/images/icons/vuejs-original.svg'} width={50} height={30} alt="Lumunate - Tech Vuejs" />
+                <Image src={'/images/icons/angular-original.svg'} width={50} height={30} alt="Lumunate - Tech Angular" />
+                <Image src={'/images/icons/nextjs-original.svg'} width={60} height={30} alt="Lumunate - Tech Nextjs" />
+                <Image src={'/images/icons/nuxtjs-original.svg'} width={50} height={30} alt="Lumunate - Tech Nustjs" />
+                <Image src={'/images/icons/nestjs-original.svg'} width={50} height={30} alt="Lumunate - Tech Nestjs" />
+                <Image src={'/images/icons/nodejs-original.svg'} width={50} height={30} alt="Lumunate - Tech Nodejs" />
+                <Image src={'/images/icons/laravel-original.svg'} width={50} height={30} alt="Lumunate - Techlaravel" />
+                <Image src={'/images/icons/rust-original.svg'} width={50} height={30} alt="Lumunate - Tech Rust" className="invert" />
+                <Image src={'/images/icons/go-original.svg'} width={50} height={30} alt="Lumunate - Tech Go" />
+                <Image src={'/images/icons/rails-plain.svg'} width={50} height={30} alt="Lumunate - Tech Rails" />
+
+
+                <Image src={'/images/icons/flask-original.svg'} width={50} height={30} alt="Lumunate - Tech Flask" className="invert" />
               </div>
             </article>
             <article data-aos="fade-up" data-aos-offset="400">
-            <Image className="mb-2" src={'/images/icons/mobile-programming.svg'} width={29} height={24} alt="Web Development and Design" /> 
+            <Image className="mb-2" src={'/images/icons/mobile-programming.svg'} width={29} height={24} alt="Lumunate - Mobile App Development" /> 
               <h3 className="mb-1 font-menda text-[1rem] font-semibold text-gray-200">Mobile App Development</h3>
               <p className="text-white/85">
                 We create scalable, intuitive and high-performance mobile applications for iOS, Android or cross-platform use.
@@ -76,15 +78,15 @@ export default function Features() {
               </p>
 
               <div className="flex gap-3 mt-4 flex-wrap">
-                <Image src={'/images/icons/react-native.svg'} width={50} height={30} alt="Icon" />
-                <Image src={'/images/icons/kotlin-original.svg'} width={50} height={30} alt="Icon" />
-                <Image src={'/images/icons/flutter-original.svg'} width={50} height={30} alt="Icon" />
-                <Image src={'/images/icons/swift-original.svg'} width={50} height={30} alt="Icon" />
+                <Image src={'/images/icons/react-native.svg'} width={50} height={30} alt="Lumunate - Tech React Native" />
+                <Image src={'/images/icons/kotlin-original.svg'} width={50} height={30} alt="Lumunate - Tech Kotlin" />
+                <Image src={'/images/icons/flutter-original.svg'} width={50} height={30} alt="Lumunate - Tech Flutter" />
+                <Image src={'/images/icons/swift-original.svg'} width={50} height={30} alt="Lumunate - Tech Swift" />
               </div>
 
             </article>
             <article data-aos="fade-up" data-aos-offset="400">
-            <Image className="mb-2" src={'/images/icons/data.svg'} width={29} height={24} alt="Web Development and Design" /> 
+            <Image className="mb-2" src={'/images/icons/data.svg'} width={29} height={24} alt="Systems Integration" /> 
               <h3 className="mb-1 font-menda text-[1rem] font-semibold text-gray-200">Systems Integration</h3>
               <p className="text-white/85">
                 Streamline your operations with custom API development and systems integration. We connect your existing tools,
@@ -92,15 +94,15 @@ export default function Features() {
               </p>
 
               <div className="flex gap-5 flex-wrap">
-                <Image src={'/images/icons/mendix.svg'} width={80} height={30} alt="Icon" />
-                <Image src={'/images/icons/outsystems.svg'} width={100} height={30} alt="Icon" />
-                <Image src={'/images/icons/appian.svg'} width={80} height={30} alt="Icon" />
-                <Image src={'/images/icons/salesforce-original.svg'} width={70} height={30} alt="Icon" />
+                <Image src={'/images/icons/mendix.svg'} width={80} height={30} alt="Lumunate - Tech Mendix" />
+                <Image src={'/images/icons/outsystems.svg'} width={100} height={30} alt="Lumunate - Tech outSystem" />
+                <Image src={'/images/icons/appian.svg'} width={80} height={30} alt="Lumunate - Tech Appian" />
+                <Image src={'/images/icons/salesforce-original.svg'} width={70} height={30} alt="Lumunate - Tech SalesForce" />
               </div>
 
             </article>
             <article data-aos="fade-up" data-aos-offset="400">
-            <Image className="mb-2" src={'/images/icons/Lock-Cloud.svg'} width={29} height={24} alt="Web Development and Design" /> 
+            <Image className="mb-2" src={'/images/icons/Lock-Cloud.svg'} width={29} height={24} alt="Lumunate - IT Consulting & Cloud Solutions" /> 
               <h3 className="mb-1 font-menda text-[1rem] font-semibold text-gray-200">IT Consulting & Cloud Solutions</h3>
               <p className="text-white/85">
                 We help businesses with cloud migration, infrastructure optimization and digital transformation strategies, while
@@ -108,15 +110,15 @@ export default function Features() {
               </p>
 
               <div className="flex gap-3 mt-4 flex-wrap">
-                <Image src={'/images/icons/amazonwebservices-original-wordmark.svg'} width={60} height={30} alt="Icon" />
-                <Image src={'/images/icons/linode.svg'} width={50} height={30} alt="Icon" />
-                <Image src={'/images/icons/azure-original.svg'} width={50} height={30} alt="Icon" />
-                <Image src={'/images/icons/googlecloud-original.svg'} width={60} height={30} alt="Icon" />
+                <Image src={'/images/icons/amazonwebservices-original-wordmark.svg'} width={60} height={30} alt="Lumunate - Tech Amazon Web Services" />
+                <Image src={'/images/icons/linode.svg'} width={50} height={30} alt="Lumunate - Tech Linode" />
+                <Image src={'/images/icons/azure-original.svg'} width={50} height={30} alt="Lumunate - Tech Azure" />
+                <Image src={'/images/icons/googlecloud-original.svg'} width={60} height={30} alt="Lumunate - Tech Google Cloud" />
               </div>
 
             </article>
             <article data-aos="fade-up" data-aos-offset="400">
-            <Image className="mb-2" src={'/images/icons/megaphone.svg'} width={29} height={24} alt="Web Development and Design" /> 
+            <Image className="mb-2" src={'/images/icons/megaphone.svg'} width={29} height={24} alt="Lumunate - Digital Marketing Services" /> 
               <h3 className="mb-1 font-menda text-[1rem] font-semibold text-gray-200">Digital Marketing Services</h3>
               <p className="text-white/85">
                 From SEO and content marketing to social media management and paid ad campaigns, we craft data-driven strategies
@@ -124,7 +126,7 @@ export default function Features() {
               </p>
             </article>
             <article data-aos="fade-up" data-aos-offset="400">
-            <Image className="mb-2" src={'/images/icons/note-favorite.svg'} width={29} height={24} alt="Web Development and Design" />  
+            <Image className="mb-2" src={'/images/icons/note-favorite.svg'} width={29} height={24} alt="Lumunate - Custom CMS Development" />  
               <h3 className="mb-1 font-menda text-[1rem] font-semibold text-gray-200">Custom CMS Development</h3>
               <p className="text-white/85">
                 From WordPress and Shopify to Drupal and Joomla, we offer seamless integrations, tailored e-commerce solutions and
@@ -132,12 +134,12 @@ export default function Features() {
               </p>
 
               <div className="flex gap-3 mt-4 flex-wrap">
-                <Image src={'/images/icons/joomla.svg'} width={45} height={30} alt="Icon" />
-                <Image src={'/images/icons/hubspot.svg'} width={50} height={30} alt="Icon" />
-                <Image src={'/images/icons/wordpress-original.svg'} width={55} height={30} alt="Icon" />
-                <Image src={'/images/icons/woo-commerce.svg'} width={65} height={30} alt="Icon" />
-                <Image src={'/images/icons/webflow.svg'} width={50} height={30} alt="Icon" />
-                <Image src={'/images/icons/drupal.svg'} width={40} height={30} alt="Icon" />
+                <Image src={'/images/icons/joomla.svg'} width={45} height={30} alt="Lumunate - Tech Joomla" />
+                <Image src={'/images/icons/hubspot.svg'} width={50} height={30} alt="Lumunate - Tech Hubspot" />
+                <Image src={'/images/icons/wordpress-original.svg'} width={55} height={30} alt="Lumunate - Tech WordPress" />
+                <Image src={'/images/icons/woo-commerce.svg'} width={65} height={30} alt="Lumunate - Tech Woo Commerce" />
+                <Image src={'/images/icons/webflow.svg'} width={50} height={30} alt="Lumunate - Tech web flow" />
+                <Image src={'/images/icons/drupal.svg'} width={40} height={30} alt="Lumunate - Tech Drupal" />
               </div>
 
             </article>

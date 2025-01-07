@@ -32,7 +32,7 @@ export default function HeroHome() {
                 width={1623}
                 height={538}
                 layout="responsive"
-                alt="Features"
+                alt="Lumunate Portfolio - Hero"
               />
             </div>
             <div data-aos="fade-up" data-aos-delay={400} data-aos-offset="0" data-aos-anchor-placement="top-bottom">
