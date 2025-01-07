@@ -66,7 +66,7 @@ export default function ContactForm() {
               width={24}
               height={24}
             />
-            <span className="text-[20px]">Islamabad, Pakistan</span>
+            <span className="text-[20px] leading-7">Office # 2, 3rd Floor, Plaza 74, Bahria<br/>Springs (North) Commercial, Bahria<br/>Town Phase 7, Rawalpindi, Pakistan</span>
           </div>
         </div>
       </div>
@@ -130,7 +130,7 @@ export default function ContactForm() {
               width={24}
               height={24}
             />
-            <span className="text-[20px]">Islamabad, Pakistan</span>
+            <span className="text-[20px] leading-7">Office # 2, 3rd Floor, Plaza 74, Bahria<br/>Springs (North) Commercial, Bahria<br/>Town Phase 7, Rawalpindi, Pakistan</span>
           </div>
         </div>
     </div>
