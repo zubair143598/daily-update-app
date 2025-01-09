@@ -78,6 +78,8 @@ const OurTeam = () => {
                       alt={member.alt}
                       width={100}
                       height={100}
+                      quality={100}
+                      unoptimized
                     />
                   </div>
                   <div className="absolute rounded-2xl bottom-0 z-50  w-full backdrop-blur-md">
