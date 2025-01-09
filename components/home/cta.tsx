@@ -17,7 +17,7 @@ export default function Cta() {
           alt="Blurred shape"
         />
       </div>
-      <div className="mx-auto">
+      <div className="mx-auto px-4 sm:px-6">
         <div className="bg-gradient-to-r from-[rgba(5,5,5,0.5)] via-forest-800/10 to-[rgba(5,5,5,0.5)] py-12 md:py-20">
           <div className="mx-auto max-w-3xl text-center">
             <h2
