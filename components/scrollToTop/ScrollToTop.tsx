@@ -20,9 +20,9 @@ export default function ScrollToTop() {
       {showScroll && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="fixed bottom-10 right-10 z-50 bg-forest-500 hover:bg-forest-800 text-white p-2 rounded-full transition-all duration-150"
+          className="fixed bottom-10 right-10 z-50  hover:bg-forest-800 text-white p-1 rounded-full transition-all duration-150"
         >
-          <Image src="/chevron-up.svg" width={30} height={30} alt='lumunate_scrollToTop'/>
+          <Image src="/chevron-up.svg" width={40} height={30} alt='lumunate_scrollToTop'/>
         </button>
       )}
     </>
