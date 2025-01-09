@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer>
-      <div className="relative flex justify-center w-full overflow-hidden h-24 md:h-48">
+      <div className="relative flex justify-center w-full overflow-hidden h-32 md:h-48">
         <Image
           src={"/footer-image.jpeg"}
           width={2000}
@@ -15,7 +15,7 @@ export default function Footer() {
         />
         <div className="absolute left-0 top-0 flex flex-col justify-center items-center w-full h-full">
           <div className="relative w-full max-w-[1440px] mx-auto overflow-hidden h-24 md:h-48">
-            <div className="absolute left-0 flex items-center w-full md:top-0 top-[7%]  my-auto md:h-full">
+            <div className="absolute left-0 flex flex-col items-center justify-center w-auto md:top-0 top-[7%]  my-auto md:h-full">
               <ul className="inline-flex gap-1">
                 <li>
                   <Link
@@ -63,6 +63,9 @@ export default function Footer() {
                   </Link>
                 </li>
               </ul>
+              <p className="font-raleway text-[10px] md:text-[12px] font-light text-[#BABABA]">
+                Copyright ® Lumunate 2024
+              </p>
             </div>
             <div className="absolute md:bottom-0 bottom-[5%] left-0 flex justify-center items-center w-full my-auto md:h-full">
               <div className="">
@@ -76,16 +79,94 @@ export default function Footer() {
                   />
                 </div>
                 <div className="flex gap-x-3 justify-center">
-                  <Link href="/terms-of-service" className="text-[12px] md:text-[14px] hover:text-forest-400 text-[#BABABA]">Terms</Link>
+                  <Link
+                    href="/terms-of-service"
+                    className="text-[12px] md:text-[14px] hover:text-forest-400 text-[#BABABA]"
+                  >
+                    Terms
+                  </Link>
                   <div className="w-[1px] h-auto bg-[linear-gradient(to_bottom,theme(colors.forest.900),theme(colors.forest.700),theme(colors.forest.900))]"></div>
-                  <Link href="/privacy-policy" className="text-[12px] md:text-[14px] hover:text-forest-400 text-[#BABABA]">Policy</Link>
+                  <Link
+                    href="/privacy-policy"
+                    className="text-[12px] md:text-[14px] hover:text-forest-400 text-[#BABABA]"
+                  >
+                    Policy
+                  </Link>
                 </div>
               </div>
             </div>
-            <div className="absolute right-0 flex items-center md:top-0 top-[14%]  my-auto md:h-full">
-              <p className="font-raleway text-[12px] md:text-[14px] font-light text-[#BABABA]">
-                Copyright ® Lumunate 2024
-              </p>
+            <div className="absolute right-6 flex md:items-center justify-center items-end md:top-0 top-[1%]  my-auto md:h-full w-[135px] md:w-[175px]">
+              <div className="flex flex-col ">
+                <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.forest.200),theme(colors.gray.50),theme(colors.forest.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text font-menda md:text-[1rem] text-[12px] font-medium text-transparent ">
+                  Let&apos;s Connect
+                </h2>
+                <div className="flex flex-col md:mt-0 -mt-2 justify-center h-full content-center">
+                  <div>
+                    <Link
+                      href="mailto: marketing@luminate.com"
+                      className="flex items-center"
+                    >
+                      <Image
+                        src="/images/icons/mail-outline.svg"
+                        alt="Email"
+                        className="md:mr-4 mr-1 md:!w-[16px]"
+                        width={10}
+                        height={10}
+                      />
+                      <span className="md:text-[14px] text-[10px] hover:text-forest-400">
+                        marketing@lumunate.com
+                      </span>
+                    </Link>
+                  </div>
+                  <div>
+                    <Link
+                      href="tel: +923361000001"
+                      className="flex items-center"
+                    >
+                      <Image
+                        src="/images/icons/phone-flip.svg"
+                        alt="Phone"
+                        className="md:mr-4 mr-1  md:!w-[16px]"
+                        width={10}
+                        height={10}
+                      />
+                      <span className="md:text-[14px] text-[10px] hover:text-forest-400">
+                        +92 3361000001
+                      </span>
+                    </Link>
+                  </div>
+                  <div className="flex items-center">
+                    <Link
+                      href="https://wa.me/+923310200888"
+                      className="flex items-center"
+                    >
+                      <Image
+                        src="/images/icons/whatsapp.svg"
+                        alt="Whatsapp"
+                        className="md:mr-4 mr-1  md:!w-[16px]"
+                        width={10}
+                        height={10}
+                      />
+                      <span className="md:text-[14px] text-[10px] hover:text-forest-400">
+                        +92 3310200888
+                      </span>
+                    </Link>
+                  </div>
+                  <div className="flex items-center">
+                    <Image
+                      src="/images/icons/location-pin.svg"
+                      alt="Location"
+                      className="md:mr-4 mr-1  md:!w-[16px]"
+                      width={10}
+                      height={10}
+                    />
+                    <span className="md:text-[14px] text-[10px] leading-3 md:leading-4">
+                      Office # 2, 3rd Floor, Plaza 74, Bahria Springs (North)
+                      Commercial, Bahria Town Phase 7, Rawalpindi, Pakistan
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
