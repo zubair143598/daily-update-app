@@ -95,12 +95,12 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className="absolute right-6 flex md:items-center justify-center items-end md:top-0 top-[1%]  my-auto md:h-full w-[135px] md:w-[175px]">
+            <div className="absolute right-[1px] md:right-2 flex md:items-center justify-center items-end md:top-0 top-[1%]  my-auto md:h-full w-[135px] md:w-[215px]">
               <div className="flex flex-col ">
                 <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.forest.200),theme(colors.gray.50),theme(colors.forest.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text font-menda md:text-[1rem] text-[12px] font-medium text-transparent ">
                   Let&apos;s Connect
                 </h2>
-                <div className="flex flex-col md:mt-0 -mt-2 justify-center h-full content-center">
+                <div className="flex flex-col md:mt-0 -mt-1 justify-center h-full content-center">
                   <div>
                     <Link
                       href="mailto: marketing@luminate.com"
