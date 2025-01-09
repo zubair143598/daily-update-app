@@ -10,7 +10,7 @@ export default function Footer() {
           src={"/footer-image.jpeg"}
           width={2000}
           height={32}
-          alt="Footer Image"
+          alt="Lumunate Portfolio - Footer Image"
           className="object-cover object-center h-full !w-full opacity-40"
         />
         <div className="absolute left-0 top-0 flex flex-col justify-center items-center w-full h-full">
@@ -71,7 +71,7 @@ export default function Footer() {
                     src={"/logo.svg"}
                     width={350}
                     height={-1}
-                    alt="Footer logo"
+                    alt="Lumunate Portfolio - Footer logo"
                     className="object-center !w-[125px] md:!w-[350px]"
                   />
                 </div>

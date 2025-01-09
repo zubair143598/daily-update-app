@@ -40,7 +40,7 @@ export default function HeroHome() {
                 width={1623}
                 height={538}
                 layout="responsive"
-                alt="Features"
+                alt="Lumunate Portfolio - Hero"
               />
             </div>
             <div
