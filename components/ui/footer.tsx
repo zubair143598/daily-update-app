@@ -14,7 +14,7 @@ export default function Footer() {
           className="object-cover object-center h-full !w-full opacity-40"
         />
         <div className="absolute left-0 top-0 flex flex-col justify-center items-center w-full h-full">
-          <div className="relative w-full max-w-[1440px] mx-auto overflow-hidden h-24 md:h-48">
+          <div className="relative w-full max-w-[1440px] mx-auto overflow-hidden h-32 md:h-48">
             <div className="absolute left-0 flex flex-col items-center justify-center w-auto md:top-0 top-[7%]  my-auto md:h-full">
               <ul className="inline-flex gap-1">
                 <li>
@@ -78,19 +78,19 @@ export default function Footer() {
                     className="object-center !w-[125px] md:!w-[350px]"
                   />
                 </div>
-                <div className="flex gap-x-3 justify-center">
+                <div className="flex gap-x-[2px] md:gap-x-3 justify-center">
                   <Link
                     href="/terms-of-service"
-                    className="text-[12px] md:text-[14px] hover:text-forest-400 text-[#BABABA]"
+                    className="text-[8px] md:text-[14px] hover:text-forest-400 text-[#BABABA]"
                   >
-                    Terms
+                    Terms of Service
                   </Link>
                   <div className="w-[1px] h-auto bg-[linear-gradient(to_bottom,theme(colors.forest.900),theme(colors.forest.700),theme(colors.forest.900))]"></div>
                   <Link
                     href="/privacy-policy"
-                    className="text-[12px] md:text-[14px] hover:text-forest-400 text-[#BABABA]"
+                    className="text-[8px] md:text-[14px] hover:text-forest-400 text-[#BABABA]"
                   >
-                    Policy
+                    Privacy Policy
                   </Link>
                 </div>
               </div>
