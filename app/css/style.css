@@ -19,3 +19,10 @@ html {
   display:flex;
   align-items: center;
 }
+
+.footer
+{
+  background-image: url('/footer-image.jpeg');
+  background-position: center;
+  background-size: cover;
+}

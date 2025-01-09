@@ -1,21 +1,42 @@
 import Image from "next/image";
-// import Logo from "./logo";
 import Link from "next/link";
 
 export default function Footer() {
   return (
     <footer>
-      <div className="relative flex justify-center w-full overflow-hidden h-32 md:h-48">
-        <Image
-          src={"/footer-image.jpeg"}
-          width={2000}
-          height={32}
-          alt="Footer Image"
-          className="object-cover object-center h-full !w-full opacity-40"
-        />
-        <div className="absolute left-0 top-0 flex flex-col justify-center items-center w-full h-full">
-          <div className="relative w-full max-w-[1440px] mx-auto overflow-hidden h-32 md:h-48">
-            <div className="absolute left-0 flex flex-col items-center justify-center w-auto md:top-0 top-[7%]  my-auto md:h-full">
+      <div className="relative footer flex justify-center w-full overflow-hidden h-36 md:h-48">
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="max-w-[1440px] w-full px-4 sm:px-6 relative">
+          <div className="flex h-full justify-between items-center">
+            <div className=" md:w-[33%] h-full justify-evenly flex flex-col">
+            <div className="md:hidden flex flex-col justify-center items-center">
+              <div>
+                <Image
+                  src={"/logo.svg"}
+                  width={350}
+                  height={1}
+                  alt="Footer logo"
+                  className="object-center !w-[190px] md:!w-[350px]"
+                />
+              </div>
+              <div className="flex gap-x-[2px] md:gap-x-3 justify-center">
+                <Link
+                  href="/terms-of-service"
+                  className="text-[8px] md:text-[11px] hover:text-forest-400 text-[#BABABA]"
+                >
+                  Terms of Service
+                </Link>
+                <div className="w-[1px] h-auto bg-[linear-gradient(to_bottom,theme(colors.forest.900),theme(colors.forest.700),theme(colors.forest.900))]"></div>
+                <Link
+                  href="/privacy-policy"
+                  className="text-[8px] md:text-[11px] hover:text-forest-400 text-[#BABABA]"
+                >
+                  Privacy Policy
+                </Link>
+              </div>
+            </div>
+            <div>
+
               <ul className="inline-flex gap-1">
                 <li>
                   <Link
@@ -67,40 +88,39 @@ export default function Footer() {
                 Copyright ® Lumunate 2024
               </p>
             </div>
-            <div className="absolute md:bottom-0 bottom-[5%] left-0 flex justify-center items-center w-full my-auto md:h-full">
-              <div className="">
-                <div>
-                  <Image
-                    src={"/logo.svg"}
-                    width={350}
-                    height={-1}
-                    alt="Footer logo"
-                    className="object-center !w-[125px] md:!w-[350px]"
-                  />
-                </div>
-                <div className="flex gap-x-[2px] md:gap-x-3 justify-center">
-                  <Link
-                    href="/terms-of-service"
-                    className="text-[8px] md:text-[14px] hover:text-forest-400 text-[#BABABA]"
-                  >
-                    Terms of Service
-                  </Link>
-                  <div className="w-[1px] h-auto bg-[linear-gradient(to_bottom,theme(colors.forest.900),theme(colors.forest.700),theme(colors.forest.900))]"></div>
-                  <Link
-                    href="/privacy-policy"
-                    className="text-[8px] md:text-[14px] hover:text-forest-400 text-[#BABABA]"
-                  >
-                    Privacy Policy
-                  </Link>
-                </div>
+            </div>
+            <div className="md:w-[33%] hidden md:flex flex-col justify-center items-center">
+              <div>
+                <Image
+                  src={"/logo.svg"}
+                  width={350}
+                  height={1}
+                  alt="Footer logo"
+                  className="object-center !w-[125px] md:!w-[350px]"
+                />
+              </div>
+              <div className="flex gap-x-[2px] md:gap-x-3 justify-center">
+                <Link
+                  href="/terms-of-service"
+                  className="text-[8px] md:text-[14px] hover:text-forest-400 text-[#BABABA]"
+                >
+                  Terms of Service
+                </Link>
+                <div className="w-[1px] h-auto bg-[linear-gradient(to_bottom,theme(colors.forest.900),theme(colors.forest.700),theme(colors.forest.900))]"></div>
+                <Link
+                  href="/privacy-policy"
+                  className="text-[8px] md:text-[14px] hover:text-forest-400 text-[#BABABA]"
+                >
+                  Privacy Policy
+                </Link>
               </div>
             </div>
-            <div className="absolute right-[1px] md:right-2 flex md:items-center justify-center items-end md:top-0 top-[1%]  my-auto md:h-full w-[135px] md:w-[215px]">
+            <div className="md:w-[33%] flex flex-col items-end">
               <div className="flex flex-col ">
-                <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.forest.200),theme(colors.gray.50),theme(colors.forest.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text font-menda md:text-[1rem] text-[12px] font-medium text-transparent ">
+                <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.forest.200),theme(colors.gray.50),theme(colors.forest.300),theme(colors.gray.200))] bg-[length:200%_auto] mb-2 bg-clip-text font-menda md:text-[1rem] text-[12px] font-medium text-transparent ">
                   Let&apos;s Connect
                 </h2>
-                <div className="flex flex-col md:mt-0 -mt-1 justify-center h-full content-center">
+                <div className="flex flex-col justify-center h-full content-center gap-y-1 text-[#BABABA]">
                   <div>
                     <Link
                       href="mailto: marketing@luminate.com"
@@ -110,10 +130,10 @@ export default function Footer() {
                         src="/images/icons/mail-outline.svg"
                         alt="Email"
                         className="md:mr-4 mr-1 md:!w-[16px]"
-                        width={10}
-                        height={10}
+                        width={16}
+                        height={16}
                       />
-                      <span className="md:text-[14px] text-[10px] hover:text-forest-400">
+                      <span className="md:text-[11px] text-[10px] hover:text-forest-400">
                         marketing@lumunate.com
                       </span>
                     </Link>
@@ -127,10 +147,10 @@ export default function Footer() {
                         src="/images/icons/phone-flip.svg"
                         alt="Phone"
                         className="md:mr-4 mr-1  md:!w-[16px]"
-                        width={10}
-                        height={10}
+                        width={16}
+                       height={16}
                       />
-                      <span className="md:text-[14px] text-[10px] hover:text-forest-400">
+                      <span className="md:text-[11px] text-[10px] hover:text-forest-400">
                         +92 3361000001
                       </span>
                     </Link>
@@ -144,10 +164,10 @@ export default function Footer() {
                         src="/images/icons/whatsapp.svg"
                         alt="Whatsapp"
                         className="md:mr-4 mr-1  md:!w-[16px]"
-                        width={10}
-                        height={10}
+                        width={16}
+                       height={16}
                       />
-                      <span className="md:text-[14px] text-[10px] hover:text-forest-400">
+                      <span className="md:text-[11px] text-[10px] hover:text-forest-400">
                         +92 3310200888
                       </span>
                     </Link>
@@ -157,12 +177,12 @@ export default function Footer() {
                       src="/images/icons/location-pin.svg"
                       alt="Location"
                       className="md:mr-4 mr-1  md:!w-[16px]"
-                      width={10}
-                      height={10}
+                      width={16}
+                     height={16}
                     />
-                    <span className="md:text-[14px] text-[10px] leading-3 md:leading-4">
-                      Office # 2, 3rd Floor, Plaza 74, Bahria Springs (North)
-                      Commercial, Bahria Town Phase 7, Rawalpindi, Pakistan
+                    <span className="md:text-[11px] text-[10px] leading-3 md:leading-4">
+                      Office # 2, 3rd Floor, Plaza 74,<br/> Bahria Springs (North)<br/>
+                      Commercial, Bahria Town<br/> Phase 7, Rawalpindi, Pakistan
                     </span>
                   </div>
                 </div>
