@@ -70,26 +70,26 @@ const OurTeam = () => {
           {teamMembers.map((member, index) => {
             return (
               <div key={index} className="w-[303px] p-[8px] mx-auto border-opacity-70 border border-forest-900 rounded-2xl group  ">
-                <div className="relative w-[287px] rounded-2xl h-full">
+                <div className="relative w-[287px] rounded-2xl h-[360px]">
                   <div className="h-full">
                     <Image
                       className="!w-full rounded-2xl h-full object-cover "
                       src={member.image}
                       alt={member.alt}
                       width={100}
-                      height={100}
+                      height={360}
                       quality={100}
                       unoptimized
                     />
                   </div>
-                  <div className="absolute rounded-2xl bottom-0 z-50  w-full backdrop-blur-md">
-                    <div className=" flex flex-col items-center p-3 ">
-                      <h3 className="text-[1.25rem]">{member.role}</h3>
-                      <p className="text-[1.25rem] font-bold">{member.name}</p>
-                      <p className="text-center group-hover:hidden block text-[14px]">
+                  <div className="absolute rounded-2xl bottom-0 z-20 h-[105px] group-hover:h-[194px]  transition-all duration-300  w-full backdrop-blur-[8px] text-[#E8FFF8A6]">
+                    <div className=" flex flex-col items-center group-hover:px-0 p-3 ">
+                      <h5 className="text-[1.25rem] font-normal">{member.role}</h5>
+                      <h4 className="text-[1.25rem] font-bold mt-1">{member.name}</h4>
+                      <p className="text-center italic group-hover:hidden block text-[14px]">
                         {member.description}
                       </p>
-                      <p className="text-center hidden group-hover:block transition-all duration-150 text-[14px]">
+                      <p className="text-center italic hidden group-hover:block transition-all duration-300  text-[14px]">
                         {member.description2}
                       </p>
                     </div>
