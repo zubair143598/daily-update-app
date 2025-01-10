@@ -30,12 +30,12 @@ export default function HeroHome() {
             </div>
             
             <div
-              className="max-w-[1440px] overflow-hidden flex-1  -ml-3 w-full"
+              className="max-w-[1440px] overflow-hidden flex-1  md:-ml-3 w-full"
               data-aos="fade-up"
             >
               <Image
                 src={"/images/Hero_img.png"}
-                className=" !h-full object-cover object-center"
+                className=" !h-full object-cover object-center lg:px-[20rem]"
                 width={1623}
                 height={538}
                 layout="responsive"
