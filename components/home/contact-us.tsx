@@ -20,7 +20,7 @@ export default function ContactForm() {
             >
               <Image
                 src="/images/icons/mail-outline.svg"
-                alt="Lumunate Portfolio - Email"
+                alt="Lumunate Contact Form - Email"
                 className="mr-4"
                 width={24}
                 height={24}
@@ -35,7 +35,7 @@ export default function ContactForm() {
             >
               <Image
                 src="/images/icons/phone-flip.svg"
-                alt="Lumunate Portfolio - Phone"
+                alt="Lumunate Contact Form - Phone"
                 className="mr-4"
                 width={24}
                 height={24}
@@ -50,7 +50,7 @@ export default function ContactForm() {
             >
               <Image
                 src="/images/icons/whatsapp.svg"
-                alt="Lumunate Portfolio - Whatsapp"
+                alt="Lumunate Contact Form - Whatsapp"
                 className="mr-4"
                 width={24}
                 height={24}
@@ -61,7 +61,7 @@ export default function ContactForm() {
           <div className="flex items-center">
             <Image
               src="/images/icons/location-pin.svg"
-              alt="Lumunate Portfolio - Location"
+              alt="Lumunate Contact Form - Location"
               className="mr-4"
               width={24}
               height={24}

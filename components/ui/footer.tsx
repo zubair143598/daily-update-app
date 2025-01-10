@@ -19,7 +19,7 @@ export default function Footer() {
                     >
                       <Image
                         src="/images/icons/linkedin.svg"
-                        alt="Lumunate Foooter - LinkedIn"
+                        alt="Lumunate Footer - LinkedIn"
                         className="md:mr-4 mr-1 md:!w-[24px]"
                         width={22}
                         height={22}
@@ -69,7 +69,7 @@ export default function Footer() {
                     src={"/logo.svg"}
                     width={160}
                     height={1}
-                    alt="Footer logo"
+                    alt="Lumunate Footer - Lumunate logo"
                     className="object-center !w-[160px] md:!w-[350px]"
                   />
                 </div>
@@ -102,7 +102,7 @@ export default function Footer() {
                   src={"/logo.svg"}
                   width={350}
                   height={1}
-                  alt="Footer logo"
+                  alt="Lumunate Footer - Lumunate logo"
                   className="object-center !w-[125px] md:!w-[350px]"
                 />
               </div>
@@ -131,7 +131,7 @@ export default function Footer() {
                     >
                       <Image
                         src="/images/icons/mail-outline.svg"
-                        alt="Email"
+                        alt="Lumunate Footer - Email"
                         className="md:mr-4 mr-3 md:!w-[24px]"
                         width={18}
                         height={18}
@@ -148,7 +148,7 @@ export default function Footer() {
                     >
                       <Image
                         src="/images/icons/phone-flip.svg"
-                        alt="Phone"
+                        alt="Lumunate Footer - Phone"
                         className="md:mr-4 mr-3  md:!w-[24px]"
                         width={18}
                         height={18}
@@ -165,7 +165,7 @@ export default function Footer() {
                     >
                       <Image
                         src="/images/icons/whatsapp.svg"
-                        alt="Whatsapp"
+                        alt="Lumunate Footer - Whatsapp"
                         className="md:mr-4 mr-3 md:!w-[24px]"
                         width={18}
                         height={18}
@@ -178,7 +178,7 @@ export default function Footer() {
                   <div className="flex items-start">
                     <Image
                       src="/images/icons/location-pin.svg"
-                      alt="Location"
+                      alt="Lumunate Footer - Location"
                       className="md:mr-4 mr-3 md:!w-[24px]"
                       width={18}
                       height={18}
