@@ -10,18 +10,18 @@ export default function Workflows() {
           {/* Section header */}
           <div className="mx-auto max-w-3xl pb-12 text-center md:pb-20">
             <div className="inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-gradient-to-r before:from-transparent before:to-forest-200/50 after:h-px after:w-8 after:bg-gradient-to-l after:from-transparent after:to-forest-200/50">
-              <span className="inline-flex bg-gradient-to-r from-white to-white bg-clip-text text-transparent">
+              <span className="inline-flex text-[14px] sm:text-[16px] bg-gradient-to-r from-white to-white bg-clip-text text-transparent">
                 Our Featured Projects
               </span>
             </div>
-            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.forest.200),theme(colors.gray.50),theme(colors.forest.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-4 font-menda text-3xl font-semibold text-transparent md:text-4xl">
+            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.forest.200),theme(colors.gray.50),theme(colors.forest.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-4 font-menda text-[1.3rem] text-transparent md:text-4xl">
               Delivering Excellence, One Project at a Time
             </h2>
           </div>
           {/* Spotlight items */}
           <Spotlight className="group mx-auto grid items-start gap-6 lg:max-w-none lg:grid-cols-3 sm:grid-cols-2">
             {/* Card 1 */}
-            <Link
+           <Link data-aos="fade-up" data-aos-offset="400"
               className="group/card relative h-full overflow-hidden rounded-2xl bg-[#000000] p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-forest-900/50 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-forest-800 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
               href="#0"
             >
@@ -32,7 +32,7 @@ export default function Workflows() {
                   src={"/images/projects/Ayse.png"}
                   width={350}
                   height={288}
-                  alt="Workflow 01"
+                  alt="Lumunate Projects - Ayse"
                 />
                 {/* Content */}
                 <div className="p-6">
@@ -59,7 +59,7 @@ export default function Workflows() {
                 </div>
               </div>
             </Link>
-            <Link
+           <Link data-aos="fade-up" data-aos-offset="400"
               className="group/card relative h-full overflow-hidden rounded-2xl bg-[#000000] p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-forest-900/50 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-forest-800 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
               href="#0"
             >
@@ -70,7 +70,7 @@ export default function Workflows() {
                   src={"/images/projects/Zeal.png"}
                   width={350}
                   height={288}
-                  alt="Workflow 01"
+                  alt="Lumunate Projects - Zeal"
                 />
                 {/* Content */}
                 <div className="p-6">
@@ -96,7 +96,7 @@ export default function Workflows() {
                 </div>
               </div>
             </Link>
-            <Link
+           <Link data-aos="fade-up" data-aos-offset="400"
               className="group/card relative h-full overflow-hidden rounded-2xl bg-[#000000] p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-forest-900/50 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-forest-800 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
               href="#0"
             >
@@ -107,7 +107,7 @@ export default function Workflows() {
                   src={"/images/projects/Koinfolio.png"}
                   width={350}
                   height={288}
-                  alt="Workflow 01"
+                  alt="Lumunate Projects - Koinfolio"
                 />
                 {/* Content */}
                 <div className="p-6">
@@ -135,7 +135,7 @@ export default function Workflows() {
                 </div>
               </div>
             </Link>
-            <Link
+           <Link data-aos="fade-up" data-aos-offset="400"
               className="group/card relative h-full overflow-hidden rounded-2xl bg-[#000000] p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-forest-900/50 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-forest-800 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
               href="#0"
             >
@@ -146,7 +146,7 @@ export default function Workflows() {
                   src={"/images/projects/FastClean.png"}
                   width={350}
                   height={288}
-                  alt="Workflow 01"
+                  alt="Lumunate Projects - Fast Clean"
                 />
                 {/* Content */}
                 <div className="p-6">
@@ -174,7 +174,7 @@ export default function Workflows() {
                 </div>
               </div>
             </Link>
-            <Link
+           <Link data-aos="fade-up" data-aos-offset="400"
               className="group/card relative h-full overflow-hidden rounded-2xl bg-[#000000] p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-forest-900/50 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-forest-800 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
               href="#0"
             >
@@ -185,7 +185,7 @@ export default function Workflows() {
                   src={"/images/projects/Maps.png"}
                   width={350}
                   height={288}
-                  alt="Workflow 01"
+                  alt="Lumunate Projects - Map Mavens"
                 />
                 {/* Content */}
                 <div className="p-6">
@@ -213,7 +213,7 @@ export default function Workflows() {
                 </div>
               </div>
             </Link>
-            <Link
+           <Link data-aos="fade-up" data-aos-offset="400"
               className="group/card relative h-full overflow-hidden rounded-2xl bg-[#000000] p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-forest-900/50 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-forest-800 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
               href="#0"
             >
@@ -224,7 +224,7 @@ export default function Workflows() {
                   src={"/images/projects/AceMyExam.png"}
                   width={350}
                   height={288}
-                  alt="Workflow 01"
+                  alt="Lumunate Projects - AceMyExam"
                 />
                 {/* Content */}
                 <div className="p-6">

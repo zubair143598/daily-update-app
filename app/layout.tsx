@@ -196,6 +196,7 @@ export default function RootLayout({
         <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
           <Header />
           {children}
+          <ScrollToTop/>
         </div>
       </body>
     </html>
