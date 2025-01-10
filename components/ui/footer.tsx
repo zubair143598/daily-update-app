@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer>
-      <div className="relative footer flex justify-center w-full overflow-hidden h-36 md:h-48">
+      <div className="relative footer bg-cover bg-center flex justify-center w-full overflow-hidden h-36 md:h-48">
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="max-w-[1440px] w-full px-4 sm:px-6 relative">
           <div className="flex h-full justify-between items-center">
