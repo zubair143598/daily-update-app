@@ -5,12 +5,12 @@ export default function Footer() {
   return (
     <footer>
       <div className="relative footer bg-cover bg-center flex justify-center w-full overflow-hidden h-44 md:h-48">
-        <div className="absolute inset-0 bg-black bg-opacity-70"></div>
-        <div className="max-w-[1440px] w-full px-4 py-4 sm:py-0 sm:px-6 relative">
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div className="max-w-[1440px] w-full px-6 py-6 sm:py-0 sm:px-6 relative">
           <div className="flex h-full md:justify-between justify-center md:gap-x-0 gap-x-2 items-center">
             <div className=" md:w-[33%] h-full justify-between md:justify-center flex flex-col">
               <div>
-                <ul className="inline-flex gap-1">
+                <ul className="inline-flex gap-[6px]">
                   <li>
                     <Link
                       className="flex items-center justify-center text-forest-500 transition hover:text-forest-400"
@@ -20,9 +20,9 @@ export default function Footer() {
                       <Image
                         src="/images/icons/linkedin.svg"
                         alt="Lumunate Foooter - LinkedIn"
-                        className="md:mr-4 mr-1 md:!w-[16px]"
-                        width={19}
-                        height={19}
+                        className="md:mr-4 mr-1 md:!w-[24px]"
+                        width={22}
+                        height={22}
                       />
                     </Link>
                   </li>
@@ -35,9 +35,9 @@ export default function Footer() {
                       <Image
                         src="/images/icons/x(twitter).svg"
                         alt="Lumunate Footer - X"
-                        className="md:mr-4 mr-1 md:!w-[16px]"
-                        width={19}
-                        height={19}
+                        className="md:mr-4 mr-1 md:!w-[24px]"
+                        width={22}
+                        height={22}
                       />
                     </Link>
                   </li>
@@ -50,15 +50,15 @@ export default function Footer() {
                       <Image
                         src="/images/icons/insta.svg"
                         alt="Lumunate Footer - instagram"
-                        className="md:mr-4 mr-1 md:!w-[16px]"
-                        width={19}
-                        height={19}
+                        className="md:mr-4 mr-1 md:!w-[24px]"
+                        width={22}
+                        height={22}
                       />
                     </Link>
                   </li>
                 </ul>
                 <div className="md:block hidden">
-                <p className="font-raleway text-[10px] md:text-[12px] font-light text-[#BABABA]">
+                <p className="font-raleway text-[10px] md:text-[14px] font-light text-[#BABABA]">
                   Copyright ® Lumunate 2024
                 </p>
               </div>
@@ -73,14 +73,14 @@ export default function Footer() {
                     className="object-center !w-[160px] md:!w-[350px]"
                   />
                 </div>
-                <div className="flex gap-x-[2px] w-full md:gap-x-3 justify-start">
+                <div className="flex gap-x-[3px] w-full md:gap-x-3 justify-start">
                   <Link
                     href="/terms-of-service"
                     className="text-[8px] md:text-[11px] hover:text-forest-400 text-[#BABABA]"
                   >
                     Terms of Service
                   </Link>
-                  <div className="w-[1px] h-auto bg-[linear-gradient(to_bottom,theme(colors.forest.900),theme(colors.forest.700),theme(colors.forest.900))]"></div>
+                  <div className="w-[0.5px] h-[8px] mt-[2px] bg-[#BABABA]"></div>
                   <Link
                     href="/privacy-policy"
                     className="text-[8px] md:text-[11px] hover:text-forest-400 text-[#BABABA]"
@@ -123,7 +123,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="md:w-[33%] w-[50%] flex flex-col items-end">
-                <div className="flex flex-col md:ml-0 ml-1 justify-center h-full content-center gap-y-3 text-[#BABABA]">
+                <div className="flex flex-col md:ml-0 ml-1 justify-center h-full content-center gap-y-[6px] text-[#BABABA]">
                   <div>
                     <Link
                       href="mailto: marketing@luminate.com"
@@ -132,9 +132,9 @@ export default function Footer() {
                       <Image
                         src="/images/icons/mail-outline.svg"
                         alt="Email"
-                        className="md:mr-4 mr-3 md:!w-[16px]"
-                        width={16}
-                        height={16}
+                        className="md:mr-4 mr-3 md:!w-[24px]"
+                        width={18}
+                        height={18}
                       />
                       <span className="text-[12px] hover:text-forest-400">
                         marketing@lumunate.com
@@ -149,9 +149,9 @@ export default function Footer() {
                       <Image
                         src="/images/icons/phone-flip.svg"
                         alt="Phone"
-                        className="md:mr-4 mr-3  md:!w-[16px]"
-                        width={16}
-                        height={16}
+                        className="md:mr-4 mr-3  md:!w-[24px]"
+                        width={18}
+                        height={18}
                       />
                       <span className="text-[12px] hover:text-forest-400">
                         +92 3361000001
@@ -166,24 +166,24 @@ export default function Footer() {
                       <Image
                         src="/images/icons/whatsapp.svg"
                         alt="Whatsapp"
-                        className="md:mr-4 mr-3 md:!w-[16px]"
-                        width={16}
-                        height={16}
+                        className="md:mr-4 mr-3 md:!w-[24px]"
+                        width={18}
+                        height={18}
                       />
                       <span className="text-[12px] hover:text-forest-400">
                         +92 3310200888
                       </span>
                     </Link>
                   </div>
-                  <div className="flex items-center">
+                  <div className="flex items-start">
                     <Image
                       src="/images/icons/location-pin.svg"
                       alt="Location"
-                      className="md:mr-4 mr-3 md:!w-[16px]"
-                      width={16}
-                      height={16}
+                      className="md:mr-4 mr-3 md:!w-[24px]"
+                      width={18}
+                      height={18}
                     />
-                    <span className="text-[12px] leading-4 md:leading-4">
+                    <span className="md:text-[12px] text-[10px] leading-4 md:leading-4">
                       Office # 2, 3rd Floor, Plaza 74, Bahria<br className="md:block hidden"/> Springs (North) Commercial, Bahria<br className="md:block hidden"/> Town Phase 7, Rawalpindi, Pakistan
                     </span>
                   </div>
