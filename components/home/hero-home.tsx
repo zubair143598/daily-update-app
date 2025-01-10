@@ -35,7 +35,7 @@ export default function HeroHome() {
             >
               <Image
                 src={"/images/Hero_img.png"}
-                className=" !h-full object-cover object-center lg:px-[20rem]"
+                className=" !h-full object-cover object-center"
                 width={1623}
                 height={538}
                 layout="responsive"
