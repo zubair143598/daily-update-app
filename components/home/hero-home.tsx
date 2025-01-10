@@ -28,13 +28,13 @@ export default function HeroHome() {
                 fast-paced digital world.
               </p>
             </div>
-
+            
             <div
               className="max-w-[1440px] overflow-hidden flex-1  -ml-3 w-full"
               data-aos="fade-up"
             >
               <Image
-                src={"/images/Illustration.png"}
+                src={"/images/Hero_img.png"}
                 className=" !h-full object-cover object-center"
                 width={1623}
                 height={538}
