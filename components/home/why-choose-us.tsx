@@ -18,7 +18,7 @@ export default function WhyChooseUs() {
           src="/images/blurred-shape-gray.svg"
           width={760}
           height={668}
-          alt="Blurred shape"
+          alt="Lumunate - Blurred shape"
         />
       </div>
       <div
@@ -30,7 +30,7 @@ export default function WhyChooseUs() {
           src="/images/blurred-shape.svg"
           width={760}
           height={668}
-          alt="Blurred shape"
+          alt="Lumunate - Blurred shape"
         />
       </div>
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6">
@@ -56,7 +56,7 @@ export default function WhyChooseUs() {
                   src="/images/icons/Frame 2.svg"
                   width={29}
                   height={29}
-                  alt="Web Development and Design"
+                  alt="Lumunate - Icon Frame"
                 />
                 <div className="mb-4">
                   <h3 className="font-menda font-semibold text-[1rem] text-gray-200">
@@ -84,7 +84,7 @@ export default function WhyChooseUs() {
                   src="/images/icons/workflow.svg"
                   width={29}
                   height={29}
-                  alt="Web Development and Design"
+                  alt="Lumunate - Icon work Flow"
                 />
                 <div className="mb-4">
                   <h3 className="font-menda font-semibold text-[1rem] text-gray-200">
@@ -111,7 +111,7 @@ export default function WhyChooseUs() {
                   src="/images/icons/market-analysis.svg"
                   width={29}
                   height={29}
-                  alt="Web Development and Design"
+                  alt="Lumunate - icon Market Analysis"
                 />
                 <div className="mb-4">
                   <h3 className="font-menda font-semibold text-[1rem] text-gray-200">
@@ -139,7 +139,7 @@ export default function WhyChooseUs() {
                   src="/images/icons/network-tree.svg"
                   width={29}
                   height={29}
-                  alt="Web Development and Design"
+                  alt="Lumunate - Icon Network"
                 />
                 <div className="mb-4">
                   <h3 className="font-menda font-semibold text-[1rem] text-gray-200">
@@ -167,7 +167,7 @@ export default function WhyChooseUs() {
                   src="/images/icons/Lock-Cloud.svg"
                   width={29}
                   height={29}
-                  alt="Web Development and Design"
+                  alt="Lumunate - Icon Lock Cloud"
                 />
                 <div className="mb-4">
                   <h3 className="font-menda font-semibold text-[1rem] text-gray-200">
@@ -195,7 +195,7 @@ export default function WhyChooseUs() {
                   src="/images/icons/file-securtiry.svg"
                   width={29}
                   height={29}
-                  alt="Web Development and Design"
+                  alt="Lumunate - Icon File Security"
                 />
                 <div className="mb-4">
                   <h3 className="font-menda font-semibold text-[1rem] text-gray-200">
