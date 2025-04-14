@@ -23,7 +23,7 @@ export default function Workflows() {
             {/* Card 1 */}
            <Link data-aos="fade-up" data-aos-offset="400"
               className="group/card relative h-full overflow-hidden rounded-2xl bg-[#000000] p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-forest-900/50 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-forest-800 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
-              href="#0"
+              href="/projects/ayse"
             >
               <div className="relative z-20 h-full overflow-hidden rounded-[inherit] bg-[linear-gradient(88.12deg,rgba(43,43,43,0.35)_3.17%,rgba(127,136,126,0.16)_52.41%,rgba(43,43,43,0.35)_94.35%)]"> 
                 {/* Image */}
@@ -32,7 +32,7 @@ export default function Workflows() {
                   src={"/images/projects/Ayse.png"}
                   width={350}
                   height={288}
-                  alt="Workflow 01"
+                  alt="Lumunate Projects - Ayse"
                 />
                 {/* Content */}
                 <div className="p-6">
@@ -61,7 +61,7 @@ export default function Workflows() {
             </Link>
            <Link data-aos="fade-up" data-aos-offset="400"
               className="group/card relative h-full overflow-hidden rounded-2xl bg-[#000000] p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-forest-900/50 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-forest-800 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
-              href="#0"
+              href="/projects/zeal"
             >
               <div className="relative z-20 h-full overflow-hidden rounded-[inherit] bg-[linear-gradient(88.12deg,rgba(43,43,43,0.35)_3.17%,rgba(127,136,126,0.16)_52.41%,rgba(43,43,43,0.35)_94.35%)] ">
                 {/* Image */}
@@ -70,7 +70,7 @@ export default function Workflows() {
                   src={"/images/projects/Zeal.png"}
                   width={350}
                   height={288}
-                  alt="Workflow 01"
+                  alt="Lumunate Projects - Zeal"
                 />
                 {/* Content */}
                 <div className="p-6">
@@ -98,7 +98,7 @@ export default function Workflows() {
             </Link>
            <Link data-aos="fade-up" data-aos-offset="400"
               className="group/card relative h-full overflow-hidden rounded-2xl bg-[#000000] p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-forest-900/50 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-forest-800 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
-              href="#0"
+              href="/projects/koinfolio"
             >
               <div className="relative z-20 h-full overflow-hidden rounded-[inherit] bg-[linear-gradient(88.12deg,rgba(43,43,43,0.35)_3.17%,rgba(127,136,126,0.16)_52.41%,rgba(43,43,43,0.35)_94.35%)] ">
                 {/* Image */}
@@ -107,7 +107,7 @@ export default function Workflows() {
                   src={"/images/projects/Koinfolio.png"}
                   width={350}
                   height={288}
-                  alt="Workflow 01"
+                  alt="Lumunate Projects - Koinfolio"
                 />
                 {/* Content */}
                 <div className="p-6">
@@ -137,7 +137,7 @@ export default function Workflows() {
             </Link>
            <Link data-aos="fade-up" data-aos-offset="400"
               className="group/card relative h-full overflow-hidden rounded-2xl bg-[#000000] p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-forest-900/50 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-forest-800 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
-              href="#0"
+              href="/projects/fast-clean"
             >
               <div className="relative z-20 h-full overflow-hidden rounded-[inherit] bg-[linear-gradient(88.12deg,rgba(43,43,43,0.35)_3.17%,rgba(127,136,126,0.16)_52.41%,rgba(43,43,43,0.35)_94.35%)] ">
                 {/* Image */}
@@ -146,7 +146,7 @@ export default function Workflows() {
                   src={"/images/projects/FastClean.png"}
                   width={350}
                   height={288}
-                  alt="Workflow 01"
+                  alt="Lumunate Projects - Fast Clean"
                 />
                 {/* Content */}
                 <div className="p-6">
@@ -176,7 +176,7 @@ export default function Workflows() {
             </Link>
            <Link data-aos="fade-up" data-aos-offset="400"
               className="group/card relative h-full overflow-hidden rounded-2xl bg-[#000000] p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-forest-900/50 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-forest-800 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
-              href="#0"
+              href="/projects/map-mavens"
             >
               <div className="relative z-20 h-full overflow-hidden rounded-[inherit] bg-[linear-gradient(88.12deg,rgba(43,43,43,0.35)_3.17%,rgba(127,136,126,0.16)_52.41%,rgba(43,43,43,0.35)_94.35%)] ">
                 {/* Image */}
@@ -185,7 +185,7 @@ export default function Workflows() {
                   src={"/images/projects/Maps.png"}
                   width={350}
                   height={288}
-                  alt="Workflow 01"
+                  alt="Lumunate Projects - Map Mavens"
                 />
                 {/* Content */}
                 <div className="p-6">
@@ -215,7 +215,7 @@ export default function Workflows() {
             </Link>
            <Link data-aos="fade-up" data-aos-offset="400"
               className="group/card relative h-full overflow-hidden rounded-2xl bg-[#000000] p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-forest-900/50 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-forest-800 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
-              href="#0"
+              href="/projects/ace-my-exams"
             >
               <div className="relative z-20 h-full overflow-hidden rounded-[inherit] bg-[linear-gradient(88.12deg,rgba(43,43,43,0.35)_3.17%,rgba(127,136,126,0.16)_52.41%,rgba(43,43,43,0.35)_94.35%)] ">
                 {/* Image */}
@@ -224,7 +224,7 @@ export default function Workflows() {
                   src={"/images/projects/AceMyExam.png"}
                   width={350}
                   height={288}
-                  alt="Workflow 01"
+                  alt="Lumunate Projects - AceMyExam"
                 />
                 {/* Content */}
                 <div className="p-6">
