@@ -7,11 +7,6 @@ const channelId = "C08SE5Q8XUG";
 
 export async function POST() {
 
-  //  const isCron = req.headers.get("x-vercel-cron");
-  // if (!isCron) {
-  //   return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  // }
-
   const res = await fetch("https://slack.com/api/chat.postMessage", {
     method: "POST",
     headers: {
@@ -48,4 +43,8 @@ export async function POST() {
   });
 
   return NextResponse.json(await res.json());
+}
+
+export function GET() {
+  return new Response("🟢 Cron endpoint is reachable.");
 }
