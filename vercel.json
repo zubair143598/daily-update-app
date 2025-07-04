@@ -1,0 +1,9 @@
+{
+  "cron": [
+    {
+      "path": "/api/send-slack-message",
+      "schedule": "15 12 * * *", 
+      "timezone": "Asia/Karachi"
+    }
+  ]
+}

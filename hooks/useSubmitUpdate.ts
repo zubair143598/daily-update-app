@@ -5,7 +5,10 @@ export function useSubmitUpdate() {
     mutationFn: async (data: {
       name: string;
       userId: string;
-      update: string;
+      accomplish?: string;
+      blockers:string;
+      todayTask:string;
+      handoffs?:string;
     }) => {
       const res = await fetch("/api/submit-update", {
         method: "POST",
