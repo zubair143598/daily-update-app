@@ -37,7 +37,7 @@ export async function POST(req: Request) {
                 type: "plain_text",
                 text: "Go to Form",
               },
-              url: `http://localhost:3000/daily-updates?userId=${userId}&name=${encodeURIComponent(userName)}`,
+              url: `https://daily-update-app-eight.vercel.app//daily-updates?userId=${userId}&name=${encodeURIComponent(userName)}`,
             },
           ],
         },
