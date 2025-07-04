@@ -1,60 +1,72 @@
 import Update from "@/lib/models/Update";
-import { connectDB } from "../../../lib/db";
+// import { connectDB } from "../../../lib/db";
 import { NextResponse } from "next/server";
+import axios from "axios";
+import { getDailyUpdateSchema } from "@/types/dailyUpdatesSchema";
+import { withDB } from "@/lib/middleware/withDB";
+
+const SLACK_CHANNEL_ID = process.env.SLACK_CHANNEL_ID;
+const SLACK_BOT_TOKEN = process.env.SLACK_BOT_TOKEN;
 
 export async function POST(req: Request) {
-  await connectDB();
-  const body = await req.json();
-  const { userId, name, accomplish, blockers, todayTask, handoffs } = body;
-  console.log(123, name);
+  return withDB(async () => {
+    const body = await req.json();
 
-  await Update.create({
-    userId,
-    name,
-    accomplish,
-    blockers,
-    todayTask,
-    handoffs,
-  });
+    const schema = getDailyUpdateSchema();
+    const parsed = schema.safeParse(body);
 
-  // Format multiline fields with bullet points
-  const formatBulletList = (text: string) =>
-    text
-      .split("\n")
-      .map((line) => `• ${line}`)
-      .join("\n");
-
-  // Construct Slack message conditionally
-  let slackText = `*${name}* has submitted their daily update:\n`;
-  {
-    if (accomplish) {
-      const formattedAccomplish = formatBulletList(accomplish);
-      slackText += `*All task implemented*:\n${formattedAccomplish}\n`;
+    if (!parsed.success) {
+      return NextResponse.json(
+        { error: parsed.error.flatten().fieldErrors },
+        { status: 400 }
+      );
     }
-  }
-  const formattedBlockers = formatBulletList(blockers);
-  slackText += `*Blockers/ Backlog*:\n${formattedBlockers}\n`;
 
-  const formattedTodayTask = formatBulletList(todayTask);
-  slackText += `*Scheduled Task*:\n${formattedTodayTask}\n`;
+    const { userId, name, accomplish, blockers, todayTask, handoffs } =
+      parsed.data;
 
-  if (handoffs) {
-    const formattedHandoffs = formatBulletList(handoffs);
-    slackText += `*handoffs*:\n${formattedHandoffs}`;
-  }
+    await Update.create({
+      userId,
+      name,
+      accomplish,
+      blockers,
+      todayTask,
+      handoffs,
+    });
 
-  // Send message to Slack
-  await fetch("https://slack.com/api/chat.postMessage", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${process.env.SLACK_BOT_TOKEN}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      channel: "C08SE5Q8XUG",
-      text: slackText,
-    }),
+    const formatBulletList = (text: string) =>
+      text
+        .split("\n")
+        .map((line) => `• ${line}`)
+        .join("\n");
+
+    let slackText = `*${name}* has submitted their daily update:\n`;
+
+    if (accomplish) {
+      slackText += `*All task implemented*:\n${formatBulletList(accomplish)}\n`;
+    }
+
+    slackText += `*Blockers/ Backlog*:\n${formatBulletList(blockers)}\n`;
+    slackText += `*Scheduled Task*:\n${formatBulletList(todayTask)}\n`;
+
+    if (handoffs) {
+      slackText += `*handoffs*:\n${formatBulletList(handoffs)}`;
+    }
+
+    await axios.post(
+      "https://slack.com/api/chat.postMessage",
+      {
+        channel: SLACK_CHANNEL_ID,
+        text: slackText,
+      },
+      {
+        headers: {
+          Authorization: `Bearer ${SLACK_BOT_TOKEN}`,
+          "Content-Type": "application/json",
+        },
+      }
+    );
+
+    return NextResponse.json({ success: true });
   });
-
-  return NextResponse.json({ success: true });
 }
