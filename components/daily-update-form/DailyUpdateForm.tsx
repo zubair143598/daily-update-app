@@ -20,19 +20,22 @@ export default function DailyUpdateForm() {
 
   const { mutate, isPending, isSuccess, error } = useSubmitUpdate();
 
-  // ✅ Grab userId and name from Slack link
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const userId = params.get("userId") || "";
     const name = params.get("name") || "";
+   if (userId) {
     setValue("userId", userId);
+  }
+  if (name) {
     setValue("name", name);
+  }
   }, [setValue]);
 
   const onSubmit = (data: DailyUpdate) => {
     mutate(data, {
       onSuccess: () => {
-        reset(); // ✅ Clear form after success
+        reset(); 
       },
     });
   };
@@ -47,12 +50,11 @@ export default function DailyUpdateForm() {
         Submit Your Daily Update
       </h2>
 
-      {/* Hidden fields for Slack user info */}
+      
       <input type="hidden" {...register("userId")} />
       <input type="hidden" {...register("name")} />
 
-      {/* Update Textarea */}
-    
+      
 <div className="mb-[31px]">
         <label className="text-[#BABABA] mb-2">Accomplish tasks since last update</label>
         <textarea

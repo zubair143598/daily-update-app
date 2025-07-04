@@ -1,50 +1,54 @@
-// app/api/send-slack-message/route.ts
+import axios from "axios";
 import { NextResponse } from "next/server";
 
-const slackToken = process.env.SLACK_BOT_TOKEN;
-const channelId = "C08SE5Q8XUG";
-
+const SLACK_BOT_TOKEN = process.env.SLACK_BOT_TOKEN;
+const SLACK_CHANNEL_ID = process.env.SLACK_CHANNEL_ID;
 
 export async function POST() {
-
-  const res = await fetch("https://slack.com/api/chat.postMessage", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${slackToken}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      channel: channelId,
-      text: "🕘 Time to submit your daily update!",
-      blocks: [
-        {
-          type: "section",
-          text: {
-            type: "mrkdwn",
-            text: "Click the button below to submit your daily update 👇",
-          },
-        },
-        {
-          type: "actions",
-          elements: [
-            {
-              type: "button",
-              text: {
-                type: "plain_text",
-                text: "Submit Update",
-              },
-              action_id: "submit_daily_update",
-              value: "submit_update", // optional
+  try {
+    const response = await axios.post(
+      "https://slack.com/api/chat.postMessage",
+      {
+        channel: SLACK_CHANNEL_ID,
+        text: "🕘 Time to submit your daily update!",
+        blocks: [
+          {
+            type: "section",
+            text: {
+              type: "mrkdwn",
+              text: "Click the button below to submit your daily update 👇",
             },
-          ],
+          },
+          {
+            type: "actions",
+            elements: [
+              {
+                type: "button",
+                text: {
+                  type: "plain_text",
+                  text: "Submit Update",
+                },
+                action_id: "submit_daily_update",
+                value: "submit_update", // optional
+              },
+            ],
+          },
+        ],
+      },
+      {
+        headers: {
+          Authorization: `Bearer ${SLACK_BOT_TOKEN}`,
+          "Content-Type": "application/json",
         },
-      ],
-    }),
-  });
-
-  return NextResponse.json(await res.json());
-}
-
-export function GET() {
-  return new Response("🟢 Cron endpoint is reachable.");
+      }
+    );
+     const responseData = response.data;
+    return NextResponse.json(responseData);
+  } catch (error) {
+    console.error("Slack API Error:", error);
+    return NextResponse.json(
+      { error: "Failed to send message" },
+      { status: 500 }
+    );
+  }
 }
