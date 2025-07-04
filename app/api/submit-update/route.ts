@@ -1,16 +1,47 @@
 import Update from "@/lib/models/Update";
-import {connectDB} from "../../../lib/db"
+import { connectDB } from "../../../lib/db";
 import { NextResponse } from "next/server";
-
 
 export async function POST(req: Request) {
   await connectDB();
   const body = await req.json();
-  const { userId, name, update } = body;
-  console.log(123,name);
-  
+  const { userId, name, accomplish, blockers, todayTask, handoffs } = body;
+  console.log(123, name);
 
-  await Update.create({ userId, name, update });
+  await Update.create({
+    userId,
+    name,
+    accomplish,
+    blockers,
+    todayTask,
+    handoffs,
+  });
+
+  // Format multiline fields with bullet points
+  const formatBulletList = (text: string) =>
+    text
+      .split("\n")
+      .map((line) => `• ${line}`)
+      .join("\n");
+
+  // Construct Slack message conditionally
+  let slackText = `*${name}* has submitted their daily update:\n`;
+  {
+    if (accomplish) {
+      const formattedAccomplish = formatBulletList(accomplish);
+      slackText += `*All task implemented*:\n${formattedAccomplish}\n`;
+    }
+  }
+  const formattedBlockers = formatBulletList(blockers);
+  slackText += `*Blockers/ Backlog*:\n${formattedBlockers}\n`;
+
+  const formattedTodayTask = formatBulletList(todayTask);
+  slackText += `*Scheduled Task*:\n${formattedTodayTask}\n`;
+
+  if (handoffs) {
+    const formattedHandoffs = formatBulletList(handoffs);
+    slackText += `*handoffs*:\n${formattedHandoffs}`;
+  }
 
   // Send message to Slack
   await fetch("https://slack.com/api/chat.postMessage", {
@@ -21,7 +52,7 @@ export async function POST(req: Request) {
     },
     body: JSON.stringify({
       channel: "C08SE5Q8XUG",
-      text: `✅ *${name}* has submitted their daily update:\n>${update}`,
+      text: slackText,
     }),
   });
 
