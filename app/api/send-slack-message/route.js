@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 const SLACK_BOT_TOKEN = process.env.SLACK_BOT_TOKEN;
 const SLACK_CHANNEL_ID = process.env.SLACK_CHANNEL_ID;
 
-export async function POST() {
+export async function GET() {
   try {
     const response = await axios.post(
       "https://slack.com/api/chat.postMessage",
@@ -51,9 +51,4 @@ export async function POST() {
       { status: 500 }
     );
   }
-}
-
-
-export async function GET() {
-  return NextResponse.json({ message: "Use POST method to trigger Slack message." });
 }
