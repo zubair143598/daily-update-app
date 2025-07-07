@@ -39,7 +39,7 @@ try {
               type: "plain_text",
               text: "Go to Form",
             },
-            url: `https://f6d0-2407-d000-8-b4e9-b8a0-f8e4-9d7b-66d9.ngrok-free.app/daily-updates?userId=${userId}&name=${encodeURIComponent(userName)}`,
+            url: `https://daily-update-app-eight.vercel.app/daily-updates?userId=${userId}&name=${encodeURIComponent(userName)}`,
           },
         ],
       },
