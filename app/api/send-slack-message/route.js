@@ -52,3 +52,8 @@ export async function POST() {
     );
   }
 }
+
+
+export async function GET() {
+  return NextResponse.json({ message: "Use POST method to trigger Slack message." });
+}
