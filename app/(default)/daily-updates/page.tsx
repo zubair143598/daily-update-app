@@ -19,7 +19,7 @@ const DailyUpdates = () => {
 
   const { mutate, isPending, isSuccess, error } = useSubmitUpdate();
 
-  // ✅ Grab userId and name from Slack link
+ 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const userId = params.get("userId") || "";
@@ -31,7 +31,7 @@ const DailyUpdates = () => {
   const onSubmit = (data: DailyUpdate) => {
     mutate(data, {
       onSuccess: () => {
-        reset(); // ✅ Clear form after success
+        reset(); // Clear form after success
       },
     });
   };
@@ -51,7 +51,6 @@ const DailyUpdates = () => {
       <input type="hidden" {...register("name")} />
 
       {/* Update Textarea */}
-    
 <div className="mb-[31px]">
         <label className="text-[#BABABA] mb-2">Accomplish tasks since last update</label>
         <textarea
@@ -128,7 +127,6 @@ const DailyUpdates = () => {
         )}
       </div>
 
-      {/* Submit Button */}
       <button
         disabled={isPending}
         type="submit"
