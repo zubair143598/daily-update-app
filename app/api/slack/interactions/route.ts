@@ -3,17 +3,7 @@ import axios from "axios";
 
 export async function POST(req: Request) {
   const formData = await req.formData();
- const rawPayload = formData.get("payload");
-if (typeof rawPayload !== "string") {
-  return NextResponse.json({ error: "Invalid payload" }, { status: 400 });
-}
-
-let payload;
-try {
-  payload = JSON.parse(rawPayload);
-} catch {
-  return NextResponse.json({ error: "Malformed JSON payload" }, { status: 400 });
-}
+  const payload = JSON.parse(formData.get("payload") as string);
 
   const user = payload.user;
   const userId = user.id;
