@@ -3,7 +3,7 @@
   "crons": [
     {
       "path": "/api/send-slack-message",
-       "schedule": "45 5 * * *"
+       "schedule": "50 5 * * *"
     }
   ]
 }
